@@ -31,8 +31,8 @@ mykdrApp.config(function($routeProvider) {
             controller  : 'cultureController'
         })
         // route for the trending page
-        .when('/trending', {
-            templateUrl : 'pages/trending.html',
+        .when('/events', {
+            templateUrl : 'pages/events.html',
             controller  : 'trendingController'
         })
         // route for the services page
