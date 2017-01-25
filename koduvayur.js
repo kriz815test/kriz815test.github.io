@@ -33,7 +33,7 @@ mykdrApp.config(function($routeProvider) {
         // route for the trending page
         .when('/events', {
             templateUrl : 'pages/events.html',
-            controller  : 'trendingController'
+            controller  : 'eventsController'
         })
         // route for the services page
         .when('/services', {
@@ -83,7 +83,7 @@ mykdrApp.controller('cultureController', function($scope) {
     $scope.message = 'Look! I am an about page.';
 });
 
-mykdrApp.controller('trendingController', function($scope) {
+mykdrApp.controller('eventsController', function($scope) {
     $scope.message = 'Look! I am an about page.';
 });
 
