@@ -6,11 +6,11 @@
         <div class="container">
             <div class="navbar-header">
                 <img class="navbar-brand" src="../images/mykdrpng.png" href="#" alt="mykoduvayur">
-                <label class="navbar-brand" href="#" style="display: inline-block;">MYKODUVAYUR <button ng-click="togglenav=!togglenav;" style="display: inline-block;" id="mob" class=" fa fa-bars"></button></label>
+                <label class="navbar-brand" href="#" style="display: inline-block;">MYKODUVAYUR <a ng-click="togglenav=!togglenav;" style="display: inline-block;" id="mob" class=" fa fa-bars"></a></label>
             </div>
 
-            <ul ng-show="togglenav" class="nav navbar-nav navbar-right" id="mykdr-nav">
-                <li><a href="#"><i class="fa fa-home"></i> HOMIE</a></li>
+            <ul ng-hide="!togglenav" class="nav navbar-nav navbar-right" id="mykdr-nav">
+                <li><a href="#"><i class="fa fa-home"></i> HOME</a></li>
                 <li><a href="#about"><i class="fa fa-book"></i> ABOUT</a></li>
                 <li><a href="#geography"><i class="fa fa-map"></i> GEOGRAPHY</a></li>
                 <li><a href="#culture"><i class="fa fa-bell"></i> CULTURE</a></li>
