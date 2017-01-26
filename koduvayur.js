@@ -15,15 +15,10 @@ mykdrApp.config(function($routeProvider) {
             controller  : 'mainController'
         })
 
-        // route for the about page
-        .when('/about', {
-            templateUrl : 'pages/about.html',
-            controller  : 'aboutController'
-        })
-        // route for the geography page
-        .when('/geography', {
-            templateUrl : 'pages/geography.html',
-            controller  : 'geographyController'
+        // route for the landscape page
+        .when('/landscape', {
+            templateUrl : 'pages/landscape.html',
+            controller  : 'landscapeController'
         })
         // route for the culture page
         .when('/culture', {
@@ -66,10 +61,9 @@ mykdrApp.config(function($routeProvider) {
 mykdrApp.controller('mainController', function($scope) {
     // create a message to display in our view
     $scope.message = 'Everyone come and see how good I look!'
-    $rootScope.togglenav = "true";
 });
 
-mykdrApp.controller('aboutController', function($scope) {
+mykdrApp.controller('landscapeController', function($scope) {
     $scope.message = 'Look! I am an about page.';
 });
 
@@ -82,10 +76,6 @@ mykdrApp.controller('servicesController', function($scope) {
 });
 
 mykdrApp.controller('emergencyController', function($scope) {
-    $scope.message = 'Look! I am an about page.';
-});
-
-mykdrApp.controller('geographyController', function($scope) {
     $scope.message = 'Look! I am an about page.';
 });
 
