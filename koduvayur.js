@@ -49,6 +49,16 @@ mykdrApp.config(function($routeProvider) {
         .when('/contact', {
             templateUrl : 'pages/contact.html',
             controller  : 'contactController'
+        })
+        // route for the trending page
+        .when('/trending', {
+            templateUrl : 'pages/trending.html',
+            controller  : 'trendingController'
+        })
+        // route for the people page
+        .when('/people', {
+            templateUrl : 'pages/people.html',
+            controller  : 'peopleController'
         });
 });
 
@@ -56,7 +66,7 @@ mykdrApp.config(function($routeProvider) {
 mykdrApp.controller('mainController', function($scope) {
     // create a message to display in our view
     $scope.message = 'Everyone come and see how good I look!'
-    $rootScope.togglenav= "true";
+    $rootScope.togglenav = "true";
 });
 
 mykdrApp.controller('aboutController', function($scope) {
@@ -87,5 +97,12 @@ mykdrApp.controller('eventsController', function($scope) {
     $scope.message = 'Look! I am an about page.';
 });
 
+mykdrApp.controller('trendingController', function($scope) {
+    $scope.message = 'Look! I am an about page.';
+});
+
+mykdrApp.controller('peopleController', function($scope) {
+    $scope.message = 'Look! I am an about page.';
+});
 
 
