@@ -5,7 +5,7 @@
         .pc{
             display: block;
         }
-        .mob{
+        #mob{
             display: none;
         }
 
@@ -16,7 +16,7 @@
         .pc{
             display: none;
         }
-        .mob{
+        #mob{
             display: block;
         }
 
@@ -28,7 +28,7 @@
     .pc{
         display: block;
     }
-    .mob{
+    #mob{
         display: none;
     }
 }
