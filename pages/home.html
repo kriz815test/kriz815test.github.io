@@ -6,19 +6,284 @@
         <div class="container">
             <div class="navbar-header">
                 <img class="navbar-brand" src="../images/mykdrpng.png" href="#" alt="mykoduvayur">
-                <label class="navbar-brand" href="#" style="display: inline-block;">MYKODUVAYUR <a ng-click="togglenav=!togglenav;" style="display: inline-block;" id="mob" class=" fa fa-bars"></a></label>
+                <label class="navbar-brand" href="#" style="display: inline-block;">MYKODUVAYUR</label>
             </div>
 
-            <ul ng-hide="!togglenav" class="nav navbar-nav navbar-right" id="mykdr-nav">
+            <ul ng-show="togglenav" class="nav navbar-nav navbar-right" id="mykdr-nav">
                 <li><a href="#"><i class="fa fa-home"></i> HOME</a></li>
                 <li><a href="#about"><i class="fa fa-book"></i> ABOUT</a></li>
                 <li><a href="#geography"><i class="fa fa-map"></i> GEOGRAPHY</a></li>
                 <li><a href="#culture"><i class="fa fa-bell"></i> CULTURE</a></li>
                 <li><a href="#services"><i class="fa fa-rupee"></i> SERVICES</a></li>
                 <li><a href="#events"><i class="fa fa-calendar"></i> EVENTS</a></li>
+                <li><a href="#trending"><i class="fa fa-calendar"></i> #TRENDING</a></li>
+                <li><a href="#people"><i class="fa fa-calendar"></i> PEOPLE</a></li>
                 <li><a href="#emergency"><i class="fa fa-plus-square"></i> EMERGENCY</a></li>
                 <li><a href="#contact"><i class="fa fa-phone"></i> CONTACT US</a></li>
             </ul>
         </div>
     </nav>
     </img>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>
+    Bootstrap: Semi-transparent navbar overlay on carousel breaks page css
+
+
+    up vote
+    -1
+    down vote
+    favorite
+    I am trying to implement a transparent bootstrap navbar overlay onto bootstrap carousel and i am having a bit of an issue, i can get the navbar exactly in the position that i want it to be in with the code provided below, however the issue is that this breaks the page css and content that should be below the slider then appears over it as well as the navbar.
+
+    css:
+
+    .navbar-wrapper {
+    position:relative;
+    }
+    .carousel {
+    position:absolute;
+    top:60px;
+    }
+    .carousel-inner {
+    width: 100%;
+    overflow: hidden;
+    }
+    .navbar {
+    position:absolute;
+    top:0;
+    z-index:10;
+    background: rgb(0, 0, 0); opacity: 0.85;
+    width:100%;
+    }
+    As you can see from the navbar html i have only added the navbar class of "navbar" as i just wanted to use less code until i get the navigation positioned where i wanted it to be, i will add the other lines when the page breaking issue is fixed. Leaving the code in or out does not change the page breaking issue so i am guessing it is to do with the actual css for the carousel that is causing the issue. html:
+eneric -->
+Image added for clarity of the issue, all text should be below the carousel. Image of problem
+
+twitter-bootstrap overlay carousel navbar
+shareimprove this question
+asked Aug 24 '16 at 3:02
+
+MartinJJ
+1931210
+add a comment
+1 Answer
+active oldest votes
+up vote
+0
+down vote
+accepted
+Oh dear... a cup of tea and another look at things and this was all i had to do, a very small change to css:
+
+.navbar-wrapper {
+position:relative;
+}
+.carousel {
+top:0;
+}
+.carousel-inner {
+width: 100%;
+overflow: hidden;
+}
+.navbar {
+position:absolute;
+top:0;
+z-index:10;
+background: rgb(0, 0, 0); opacity: 0.85;
+width:100%;
+}
+shareimprove this answer
+edited Aug 24 '16 at 3:47
+answered Aug 24 '16 at 3:21
+
+MartinJJ
+1931210
+add a comment
+Your Answer
+
+
+
+Sign up or log in
+
+Sign up using Google
+Sign up using Facebook
+Sign up using Email and Password
+Post as a guest
+
+Name
+
+Email
+
+required, but never shown
+Post Your Answer
+By posting your answer, you agree to the privacy policy and terms of service.
+
+Not the answer you're looking for?	Browse other questions tagged twitter-bootstrap overlay carousel navbar or ask your own question.
+
+asked
+
+5 months ago
+
+viewed
+
+127 times
+
+active
+
+5 months ago
+
+BLOG
+Podcast #99 - The Requested Operation Requires Elevation
+Work from anywhere
+ReactJS Engineer - Russia, Ukraine
+FoxCommerceSeattle, WA
+REMOTE
+reactjsjavascript
+Ruby on Rails Senior Architect - $50/hr
+CrossoverNo office location
+REMOTE
+rubyruby-on-rails
+ReactJS Frontend MasterMind
+AgilityFeatBuenos Aires, Argentina
+REMOTE
+reactjsbackbone.js
+Experienced Frontend Engineer
+CitrusbyteNo office location
+REMOTERELOCATION
+javascriptreactjs
+Related
+
+1
+Twitter Bootstrap Carousel with overlaying responsive image
+269
+Bootstrap 3 Navbar with Logo
+474
+Change navbar color in Twitter Bootstrap 3
+2
+twitter bootstrap carousel, overlay div on top of carousel but keep navigation working
+4
+Bootstrap Navbar overtop Carousel
+-1
+Bootstrap - carousel slides activated from navbar
+0
+Can I use bootstrap navbar inside of carousel?
+0
+Carousel arrows overlapping above navbar in Bootstrap 3
+0
+Bootstrap: Set navbar to partially overlapp carousel & set to 100% width on resize
+0
+carousel under the navbar
+Hot Network Questions
+
+Enum constants behaving differently in C and C++
+How to read different lines of a file to different variables?
+Reason for the Amiga clock speed
+Magento 2: what does i18n mean?
+How do I use gerundives of obligation for deponent verbs?
+What electoral mechanisms might prevent the rise of a demagogue?
+Extension method to retrieve list of days in the current week
+Using only 4 Bytes of AES-CMAC
+Pratchett Quote about Research and Development
+what is the antonym of "assemble a team"?
+Was the original Star Wars film originally called "The Star Wars"?
+What limits the use of Supply and Connections?
+What is the difference between a Pass and a Col?
+Will an IOS App get deleted/ Remove itself if Developer's license expires?
+Usage and origin of "sister" in expressions like "sister company, sister ship, sister site" etc
+Should a tester feel bad about finding too many defects/bugs in the product?
+My players are a crude bunch, and I'm having a hard time staying in character among the chatter
+Cartoon vs Real Life Bores?---(Pointy vs Flat kind)
+Why would a bank need to accept deposits from private clients if it can just borrow from the Federal Reserve?
+Even odd words can be oddly even
+The most outrageous (or ridiculous) conjectures in mathematics
+What is the best way to say “gentle reminder” in German?
+Fastest way to remove bones from a man
+Auto premium increasing with aging vehicle and no new tickets
+question feed
+about us tour help blog chat data legal privacy policy work here advertising info developer jobs directory mobile contact us feedback
+TECHNOLOGY	LIFE / ARTS	CULTURE / RECREATION	SCIENCE	OTHER
+Stack Overflow
+Server Fault
+Super User
+Web Applications
+Ask Ubuntu
+Webmasters
+Game Development
+TeX - LaTeX
+Software Engineering
+Unix & Linux
+Ask Different (Apple)
+WordPress Development
+Geographic Information Systems
+Electrical Engineering
+Android Enthusiasts
+Information Security
+Database Administrators
+Drupal Answers
+SharePoint
+User Experience
+Mathematica
+Salesforce
+ExpressionEngine® Answers
+Cryptography
+Code Review
+Magento
+Signal Processing
+Raspberry Pi
+Programming Puzzles & Code Golf
+more (7)
+Photography
+Science Fiction & Fantasy
+Graphic Design
+Movies & TV
+Music: Practice & Theory
+Seasoned Advice (cooking)
+Home Improvement
+Personal Finance & Money
+Academia
+more (8)
+English Language & Usage
+Skeptics
+Mi Yodeya (Judaism)
+Travel
+Christianity
+English Language Learners
+Japanese Language
+Arqade (gaming)
+Bicycles
+Role-playing Games
+Anime & Manga
+Motor Vehicle Maintenance & Repair
+more (17)
+MathOverflow
+Mathematics
+Cross Validated (stats)
+Theoretical Computer Science
+Physics
+Chemistry
+Biology
+Computer Science
+Philosophy
+more (3)
+Meta Stack Exchange
+Stack Apps
+Area 51
+Stack Overflow Talent
+site design / logo © 2017 Stack Exchange Inc; user contributions licensed under cc by-sa 3.0 with attribution required
+rev 2017.1.25.24801
+</p>
