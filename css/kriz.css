@@ -1,3 +1,15 @@
+.view {
+    height: 100%;
+}
+
+.view {
+    background: url("https://mdbootstrap.com/images/regular/city/img%20(17).jpg")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 @media (max-width: 992px){
 
     @media(orientation: landscape) {
@@ -5,8 +17,15 @@
         .pc{
             display: block;
         }
-        #mob{
+        .mob{
             display: none;
+        }
+
+        .mylogo{
+
+            display: inline-block;
+            font-size: 5vw;
+            height: 6vw;
         }
 
     }
@@ -16,8 +35,15 @@
         .pc{
             display: none;
         }
-        #mob{
+        .mob{
             display: block;
+        }
+
+        .mylogo{
+
+            display: inline-block;
+            font-size: 5vh;
+            height: 6vh;
         }
 
     }
@@ -25,10 +51,20 @@
 
 @media(min-width: 992px) {
 
+
+
     .pc{
         display: block;
     }
-    #mob{
+    .mob{
         display: none;
     }
+
+    .mylogo{
+
+        display: inline-block;
+        font-size: 5vw;
+        height: 6vw;
+    }
+
 }
