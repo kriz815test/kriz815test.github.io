@@ -26,6 +26,7 @@
             display: inline-block;
             font-size: 5vw;
             height: 6vw;
+            line-height : 6vw;
         }
 
     }
@@ -44,6 +45,7 @@
             display: inline-block;
             font-size: 5vh;
             height: 6vh;
+            line-height : 6vh;
         }
 
     }
@@ -65,6 +67,7 @@
         display: inline-block;
         font-size: 5vw;
         height: 6vw;
+        line-height : 6vw;
     }
 
 }
