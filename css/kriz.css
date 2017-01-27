@@ -24,9 +24,9 @@
         .mylogo{
 
             display: inline-block;
-            font-size: 5vw;
-            height: 6vw;
-            line-height : 6vw;
+            font-size: 4vw;
+            height: 4vw;
+            line-height : 100%;
         }
 
     }
@@ -43,9 +43,9 @@
         .mylogo{
 
             display: inline-block;
-            font-size: 5vh;
-            height: 6vh;
-            line-height : 6vh;
+            font-size: 4vh;
+            height: 4vh;
+            line-height : 100%;
         }
 
     }
@@ -65,9 +65,9 @@
     .mylogo{
 
         display: inline-block;
-        font-size: 5vw;
-        height: 6vw;
-        line-height : 6vw;
+        font-size: 4vw;
+        height: 4vw;
+        line-height : 100%;
     }
 
 }
