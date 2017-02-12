@@ -347,14 +347,14 @@ body {
         }
         #mykdr_menu>li:hover>a {
                 color: green;
-                text-underline: none;
+                text-decoration: none;
 
         }
 
         #emergency:hover>a {
 
             color: red !important;
-            text-underline: none;
+            text-decoration: none;
         }
 
         #mykdr_menu>li>a{
@@ -510,14 +510,14 @@ body {
     #home:hover>a,#landscape:hover>a,#culture:hover>a,#contact:hover>a,#people:hover>a,#trending:hover>a,#events:hover>a,#services:hover>a {
 
         color: #008800;
-        text-underline: none;
+        text-decoration: none;
 
     }
 
     #emergency:hover>a {
 
         color: red !important;
-        text-underline: none;
+        text-decoration: none;
     }
 
     #mykdr_menu>li>a{
