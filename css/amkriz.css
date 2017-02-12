@@ -189,22 +189,33 @@ body {
 
         }
 
-        #mykdr_menu>li:hover{
+        #mykdr_menu>li:hover {
 
-            color: green;
             background-color: rgba(08,08,08,0.1);
         }
+        #mykdr_menu>li:hover +a {
+            color: green;
+            text-underline: none;
 
-        #emergency:hover {
-
-            color: red !important;
         }
 
-        #mykdr_menu>li{
+        #emergency:hover +a {
+
+            color: red !important;
+            text-underline: none;
+        }
+
+        #mykdr_menu>li>a{
             color: #5b3930;
             cursor: pointer;
         }
 
+        .pagebanner
+        {
+            margin-top: 8vh;
+            width: 100%;
+            height: auto;
+        }
 
     }
 
@@ -330,20 +341,32 @@ body {
 
         }
 
-        #mykdr_menu>li:hover{
+        #mykdr_menu>li:hover {
 
-            color: green;
             background-color: rgba(08,08,08,0.1);
         }
+        #mykdr_menu>li:hover +a {
+                color: green;
+                text-underline: none;
 
-        #emergency:hover {
-
-            color: red !important;
         }
 
-        #mykdr_menu>li{
+        #emergency:hover +a {
+
+            color: red !important;
+            text-underline: none;
+        }
+
+        #mykdr_menu>li>a{
             color: #5b3930;
             cursor: pointer;
+        }
+
+        .pagebanner
+        {
+            margin-top: 8vh;
+            width: 100%;
+            height: auto;
         }
 
 
@@ -388,6 +411,7 @@ body {
 
 
         }
+
 
 
 
@@ -481,25 +505,37 @@ body {
         display: none!important;
     }
 
-    #mykdr_menu>li{
-        color: #5b3930;
+
+
+    #home:hover+ a,#landscape:hover+ a,#culture:hover+ a,#contact:hover+ a,#people:hover+ a,#trending:hover+ a,#events:hover+ a,#services:hover+ a {
+
+        color: #008800;
+        text-underline: none;
+
     }
 
-    #mykdr_menu>li>label{
+
+
+    #mykdr_menu>li:hover {
+
+        background-color: rgba(08,08,08,0.1);
+    }
+
+    #emergency:hover +a {
+
+        color: red !important;
+        text-underline: none;
+    }
+
+    #mykdr_menu>li>a{
+        color: #5b3930;
         cursor: pointer;
     }
 
-    #home:hover,#landscape:hover,#culture:hover,#contact:hover,#people:hover,#trending:hover,#events:hover,#services:hover {
-
-        color: #008800;
-
+    .pagebanner
+    {
+        margin-top: 8vh;
+        width: 100%;
+        height: auto;
     }
-
-
-    #emergency:hover {
-
-        color:red!important;
-
-    }
-
 }
