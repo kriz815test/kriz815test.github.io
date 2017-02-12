@@ -8,12 +8,12 @@
             <div id="mykdr_logo">
                 <img class="mylogo" src="images/mykdrpng.png" href="#" alt="mykoduvayur" />
                 <label class="mylogocap" href="#">MYKODUVAYUR</label>
-                <label class="mymenuglyph"><i class="fa fa-bars"></i></label>
+                <label ng-click="opened()" class="mymenuglyph"><i class="fa fa-bars"></i></label>
 
             </div>
 
             <ul id="mykdr_menu">
-                <li id="closenav"><i class="fa fa-close"></i></li>
+                <li ng-click="closed()" id="closenav"><i class="fa fa-close"></i></li>
                 <li id="home" ><a href="#"><i class="fa fa-home"></i> HOME</a></li>
                 <li id="landscape"><a href="#landscape"><i class="fa fa-map"></i> LANDSCAPE</a></li>
                 <li id="culture"><a href="#culture"><i class="fa fa-bell"></i> CULTURE</a></li>
