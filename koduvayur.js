@@ -89,12 +89,12 @@ mykdrApp.controller('landscapeController', function($scope) {
 mykdrApp.controller('contactController', function($scope) {
     $scope.message = 'Contact us! JK. This is just a demo.';
     
-    $scope.closed() = function() {
+    $scope.closed = function() {
         var x= document.getElementById("mykdr_menu");
         x.style.display="none";
     };
 
-    $scope.opened() = function() {
+    $scope.opened = function() {
         var x= document.getElementById("mykdr_menu");
         x.style.display="block";
     };
