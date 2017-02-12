@@ -149,7 +149,7 @@ body {
             padding: 0;
             left: 0;
 
-            font-family: "Segoe UI Semibold";
+            font-family: "Segoe UI";
         }
 
         #mykdr_menu>li{
@@ -193,14 +193,14 @@ body {
         }
         #mykdr_menu>li:hover>a {
             color: green;
-            text-underline: none;
+            text-decoration: none;
 
         }
 
         #emergency:hover>a {
 
             color: red !important;
-            text-underline: none;
+            text-decoration: none;
         }
 
         #mykdr_menu>li>a{
@@ -223,7 +223,7 @@ body {
         #mykdr_nav{
 
 
-            height: 9vh;
+            height: 14vh;
             margin-top: 0;
 
         }
@@ -231,9 +231,9 @@ body {
 
         #bannerpc {
 
-            margin-top: 9vh;
+            margin-top: 14vh;
             width: 100%;
-            height: 91vh;
+            height: 86vh;
 
         }
 
@@ -241,10 +241,10 @@ body {
 
 
             color: #1c1c1c;
-            height:9vh;
+            height:14vh;
             width: 100%;
-            line-height: 7vh;
-            padding: 0.7vh 0 0.8vh 0;
+            line-height: 10vh;
+            padding: 1.2vh 0 1.5vh 0;
             cursor: pointer;
 
             display: block;
@@ -255,33 +255,33 @@ body {
         .mylogo{
 
             display: block;
-            min-height: 6.5vh;
-            min-width: 6.5vh;
-            line-height: 7vh;
-            font-size: 6vh;
+            min-height: 9vh;
+            min-width: 9vh;
+            line-height: 10vh;
+            font-size: 8.5vh;
             position: relative;
             padding: 0;
             margin-right: -2px;
-            margin-bottom: 1vh;
+            margin-bottom: 2vh;
         }
 
         .mylogocap{
 
             display: inline-block;
             font-family: "Segoe UI Semibold";
-            font-size: 4.5vh;
+            font-size: 6.5vh;
             cursor: pointer;
-            padding-top: 0.3vh;
+            padding-top: 0.7h;
         }
 
         .mymenuglyph{
 
             display: inline-block;
-            font-size: 5vh;
+            font-size: 6.5vh;
             color: #1c1c1c;
             cursor: pointer;
             float: right;
-            padding-top: 0.4vh;
+            padding-top: 0.8vh;
         }
 
         #mykdr_menu{
@@ -305,7 +305,7 @@ body {
             width: 49.6%;
             height: 18vh;
             line-height: 18vh;
-            font-size: 4.5vh;
+            font-size: 6.5vh;
             color: #fafafa;
             text-align: center;
             margin: 0 auto;
@@ -327,7 +327,7 @@ body {
             float: right;
             cursor: pointer;
             padding-top: 0.5vh;
-            font-size: 7vh;
+            font-size: 9vh;
             font-family: FontAwesome;
             color: #1c1c1c !important;
 
