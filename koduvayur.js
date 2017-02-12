@@ -61,12 +61,12 @@ mykdrApp.config(function($routeProvider) {
 mykdrApp.controller('mainController', function($scope) {
     // create a message to display in our view
     $scope.message = 'Everyone come and see how good I look!'
-    $scope.closed() = function() {
+    $scope.closed = function() {
         var x= document.getElementById("mykdr_menu");
         x.style.display="none";
     };
 
-    $scope.opened() = function() {
+    $scope.opened = function() {
         var x= document.getElementById("mykdr_menu");
         x.style.display="block";
     };
