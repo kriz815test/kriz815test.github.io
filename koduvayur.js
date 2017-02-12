@@ -75,12 +75,12 @@ mykdrApp.controller('mainController', function($scope) {
 mykdrApp.controller('landscapeController', function($scope) {
     $scope.message = 'Look! I am an about page.';
     
-    $scope.closed() = function() {
+    $scope.closed = function() {
         var x= document.getElementById("mykdr_menu");
         x.style.display="none";
     };
 
-    $scope.opened() = function() {
+    $scope.opened = function() {
         var x= document.getElementById("mykdr_menu");
         x.style.display="block";
     };
@@ -103,12 +103,12 @@ mykdrApp.controller('contactController', function($scope) {
 mykdrApp.controller('servicesController', function($scope) {
     $scope.message = 'Look! I am an about page.';
     
-    $scope.closed() = function() {
+    $scope.closed = function() {
         var x= document.getElementById("mykdr_menu");
         x.style.display="none";
     };
 
-    $scope.opened() = function() {
+    $scope.opened = function() {
         var x= document.getElementById("mykdr_menu");
         x.style.display="block";
     };
@@ -117,12 +117,12 @@ mykdrApp.controller('servicesController', function($scope) {
 mykdrApp.controller('emergencyController', function($scope) {
     $scope.message = 'Look! I am an about page.';
     
-    $scope.closed() = function() {
+    $scope.closed = function() {
         var x= document.getElementById("mykdr_menu");
         x.style.display="none";
     };
 
-    $scope.opened() = function() {
+    $scope.opened = function() {
         var x= document.getElementById("mykdr_menu");
         x.style.display="block";
     };
@@ -131,12 +131,12 @@ mykdrApp.controller('emergencyController', function($scope) {
 mykdrApp.controller('cultureController', function($scope) {
     $scope.message = 'Look! I am an about page.';
     
-    $scope.closed() = function() {
+    $scope.closed = function() {
         var x= document.getElementById("mykdr_menu");
         x.style.display="none";
     };
 
-    $scope.opened() = function() {
+    $scope.opened = function() {
         var x= document.getElementById("mykdr_menu");
         x.style.display="block";
     };
@@ -145,12 +145,12 @@ mykdrApp.controller('cultureController', function($scope) {
 mykdrApp.controller('eventsController', function($scope) {
     $scope.message = 'Look! I am an about page.';
     
-    $scope.closed() = function() {
+    $scope.closed = function() {
         var x= document.getElementById("mykdr_menu");
         x.style.display="none";
     };
 
-    $scope.opened() = function() {
+    $scope.opened = function() {
         var x= document.getElementById("mykdr_menu");
         x.style.display="block";
     };
@@ -159,12 +159,12 @@ mykdrApp.controller('eventsController', function($scope) {
 mykdrApp.controller('trendingController', function($scope) {
     $scope.message = 'Look! I am an about page.';
     
-    $scope.closed() = function() {
+    $scope.closed = function() {
         var x= document.getElementById("mykdr_menu");
         x.style.display="none";
     };
 
-    $scope.opened() = function() {
+    $scope.opened = function() {
         var x= document.getElementById("mykdr_menu");
         x.style.display="block";
     };
@@ -173,12 +173,12 @@ mykdrApp.controller('trendingController', function($scope) {
 mykdrApp.controller('peopleController', function($scope) {
     $scope.message = 'Look! I am an about page.';
     
-    $scope.closed() = function() {
+    $scope.closed = function() {
         var x= document.getElementById("mykdr_menu");
         x.style.display="none";
     };
 
-    $scope.opened() = function() {
+    $scope.opened = function() {
         var x= document.getElementById("mykdr_menu");
         x.style.display="block";
     };
