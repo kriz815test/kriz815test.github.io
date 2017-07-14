@@ -32,21 +32,52 @@
 
     <div class="col-md-12" id="non-nav">
 
-        <div id="bannerdiv">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
 
-            <img id="bannermob" class="mob" src="./images/wallmob.jpg"/>
-            <img id="bannerpc" class="pc" src="./images/wallpc.jpg"/>
+            <!-- Wrapper for slides -->
+            <div class="pc carousel-inner">
+                <div class="item active">
+                    <img class="bannerpc" src="images/wallpc.jpg" alt="1">
+                </div>
 
+                <div class="item">
+                    <img class="bannerpc" src="images/wallpc.jpg" alt="2">
+                </div>
 
-        </div>
+                <div class="item">
+                    <img class="bannerpc" src="images/wallpc.jpg" alt="3">
+                </div>
+            </div>
 
-        <div class="col-md-12">
+            <div class="mob carousel-inner">
+                <div class="item active">
+                    <img class="bannermob" src="images/wallmob.jpg" alt="1">
+                </div>
 
-            <h1>hey</h1>
-            <h2>inga</h2>
-            <h3>paaru</h3>
-            <h4>kootu</h4>
-            <h5>joru</h5>
+                <div class="item">
+                    <img class="bannermob" src="images/wallmob.jpg" alt="2">
+                </div>
+
+                <div class="item">
+                    <img class="bannermob" src="images/wallmob.jpg" alt="3">
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="fa fa-angle-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="fa fa-angle-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
 
     </div>
