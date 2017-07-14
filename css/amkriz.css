@@ -83,7 +83,7 @@ body {
         }
 
 
-        #bannermob {
+        .bannermob {
 
             margin-top: 9vh;
             width: 100%;
@@ -229,7 +229,7 @@ body {
         }
 
 
-        #bannerpc {
+        .bannerpc {
 
             margin-top: 13vh;
             width: 100%;
@@ -487,7 +487,7 @@ body {
 
     }
 
-    #bannerpc {
+    .bannerpc {
         width: 100%;
         height: 92vh;
 
