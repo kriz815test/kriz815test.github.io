@@ -61,15 +61,63 @@ mykdrApp.config(function($routeProvider) {
 mykdrApp.controller('mainController', function($scope) {
     // create a message to display in our view
     $scope.message = 'Everyone come and see how good I look!'
-    $scope.closed = function() {
+     function closed() {
+        var z= document.getElementById("mymenuglyph");
+        z.style.display="inline-block";
         var x= document.getElementById("mykdr_menu");
         x.style.display="none";
-    };
+        var y= document.getElementById("closenav");
+        y.style.display="none";
 
-    $scope.opened = function() {
+        var a= document.getElementById("langmenu");
+        a.style.display="inline-block";
+
+        var b= document.getElementById("english");
+        b.style.display="none";
+        var c= document.getElementById("malayalam");
+        c.style.display="none";
+    }
+
+    function opened() {
+        var z= document.getElementById("closenav");
+        z.style.display="inline-block";
         var x= document.getElementById("mykdr_menu");
         x.style.display="block";
-    };
+        var y= document.getElementById("mymenuglyph");
+        y.style.display="none";
+    }
+
+    function langselect() {
+        var z= document.getElementById("langmenu");
+        z.style.display="none";
+        var x= document.getElementById("english");
+        x.style.display="inline-block";
+        var y= document.getElementById("malayalam");
+        y.style.display="inline-block";
+    }
+
+    function eng() {
+
+        alert("selected language: ENGLISH");
+
+        location.reload();
+    }
+
+    function mal() {
+
+        alert("selected language: മലയാളം");
+
+        location.reload();
+
+    }
+
+    function menuload() {
+
+        var c= document.getElementById("malayalam");
+        if(c.style.display=="inline-block")
+           {location.reload();}
+    }
+
 });
 
 mykdrApp.controller('landscapeController', function($scope) {
