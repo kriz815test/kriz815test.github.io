@@ -62,9 +62,9 @@ mykdrApp.config(function($routeProvider) {
 // create the controller and inject Angular's $scope
 mykdrApp.controller('mainController', function($scope) {
     // create a message to display in our view
-    $scope.message = 'Everyone come and see how good I look!'
+    $scope.message = 'Everyone come and see how good I look!';
     
-     $rootScope.closed() = function() {
+     $scope.closed = function() {
         var z= document.getElementById("mymenuglyph");
         z.style.display="inline-block";
         var x= document.getElementById("mykdr_menu");
@@ -81,7 +81,7 @@ mykdrApp.controller('mainController', function($scope) {
         c.style.display="none";
     };
 
-    $rootScope.opened() = function() {
+    $scope.opened = function() {
         var z= document.getElementById("closenav");
         z.style.display="inline-block";
         var x= document.getElementById("mykdr_menu");
@@ -90,7 +90,7 @@ mykdrApp.controller('mainController', function($scope) {
         y.style.display="none";
     };
 
-    $rootScope.langselect() = function() {
+    $scope.langselect = function() {
         var z= document.getElementById("langmenu");
         z.style.display="none";
         var x= document.getElementById("english");
@@ -99,14 +99,14 @@ mykdrApp.controller('mainController', function($scope) {
         y.style.display="inline-block";
     };
 
-    $rootScope.eng() = function() {
+    $scope.eng = function() {
 
         alert("selected language: ENGLISH");
 
         location.reload();
     };
 
-    $rootScope.mal() = function() {
+    $scope.mal = function() {
 
         alert("selected language: മലയാളം");
 
@@ -114,10 +114,10 @@ mykdrApp.controller('mainController', function($scope) {
 
     };
 
-    $rootScope.menuload() = function() {
+    $scope.menuload = function() {
 
         var c= document.getElementById("malayalam");
-        if(c.style.display=="inline-block")
+        if(c.style.display==="inline-block")
            {location.reload();}
     };
 

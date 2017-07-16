@@ -1,66 +1,66 @@
 @font-face {
-    font-family: heart;
-    src: url("./fonts/heart.ttf");
+    font-family: heart, serif;
+    src: url('/fonts/heart.ttf');
 }
 @font-face {
-    font-family: narrow;
-    src: url("./fonts/narrow.ttf");
+    font-family: narrow, serif;
+    src: url("/fonts/narrow.ttf");
 }
 @font-face {
-    font-family: macondo;
-    src: url("./fonts/macondo.ttf");
+    font-family: macondo, serif;
+    src: url("/fonts/macondo.ttf");
 }
 @font-face {
-    font-family: flamenco;
-    src: url("./fonts/flamenco.ttf");
+    font-family: flamenco, serif;
+    src: url("/fonts/flamenco.ttf");
 }
 @font-face {
-    font-family: cedarville;
-    src: url("./fonts/cedarville.ttf");
+    font-family: cedarville, serif;
+    src: url("/fonts/cedarville.ttf");
 }
 @font-face {
-    font-family: brush;
-    src: url("./fonts/brush.ttf");
+    font-family: brush, serif;
+    src: url("/fonts/brush.ttf");
 }
 @font-face {
-    font-family: beyond;
-    src: url("./fonts/beyond.ttf");
+    font-family: beyond, serif;
+    src: url("/fonts/beyond.ttf");
 }
 @font-face {
-    font-family: petal;
-    src: url("./fonts/petal.ttf");
+    font-family: petal, serif;
+    src: url("/fonts/petal.ttf");
 }
 @font-face {
-    font-family: anthro;
-    src: url("./fonts/anthro.otf");
+    font-family: anthro, serif;
+    src: url("/fonts/anthro.otf");
 }
 @font-face {
-    font-family: hutan;
-    src: url("./fonts/hutan.otf");
+    font-family: hutan, serif;
+    src: url("/fonts/hutan.otf");
 }
 @font-face {
-    font-family: oromo;
-    src: url("./fonts/oromo.otf");
+    font-family: oromo, serif;
+    src: url("/fonts/oromo.otf");
 }
 @font-face {
-    font-family: ktf;
-    src: url("./fonts/ktf.ttf");
+    font-family: ktf, serif;
+    src: url("/fonts/ktf.ttf");
 }
 @font-face {
-    font-family: adam;
-    src: url("./fonts/adam.otf");
+    font-family: adam, serif;
+    src: url("/fonts/adam.otf");
 }
 @font-face {
-    font-family: chilanka;
-    src: url("./fonts/chilanka.ttf");
+    font-family: chilanka , serif;
+    src: url("/fonts/chilanka.ttf") format('truetype');
 }
 @font-face {
-    font-family: manjari;
-    src: url("./fonts/manjari.ttf");
+    font-family: manjari, serif;
+    src: url("/fonts/manjari.ttf") format('truetype');
 }
 @font-face {
-    font-family: keraleeyam;
-    src: url("./fonts/keraleeyam.ttf");
+    font-family: keraleeyam, serif;
+    src: url("/fonts/keraleeyam.ttf") format('truetype');
 }
 
 img {
@@ -132,6 +132,16 @@ body {
 
 }
 
+.mylogocap{
+    color: #5B3930 !important;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: "Segoe UI Symbol";
+}
+.mylogocap:hover{
+    text-decoration: wavy !important;
+}
+
 #english {
     display: none;
     color: #2aabd2 !important;
@@ -148,15 +158,17 @@ body {
 }
 
 #malayalam {
-    font-family: manjari;
+    font-family: 'manjari';
+    font-weight: bold;
 }
 
 #malayalam>label {
-    font-family: chilanka;
+    font-family: 'chilanka';
     font-weight: bolder;
     color: #ee1111;
     display: inline-block;
 }
+
 
 @media(max-width: 300px){
 
@@ -209,16 +221,17 @@ body {
             position: relative;
             padding: 0;
             margin-right: -2px;
+            padding-bottom: 1vh;
             margin-bottom: 1.5vh;
         }
 
         .mylogocap{
 
             display: inline-block;
-            font-family: adam;
+            /*font-family: "Arial Rounded MT Bold" !important;*/
             font-size: 4.8vh;
             cursor: pointer;
-            padding-top: 1vh;
+            padding-top: 2vh;
         }
 
         #mymenuglyph{
@@ -251,7 +264,7 @@ body {
             padding: 0;
             left: 0;
             top: 9vh;
-            font-family: "Segoe UI Semibold";
+            font-family: "Segoe UI Semibold", serif;
         }
 
         #mykdr_menu>li{
@@ -261,7 +274,7 @@ body {
             width: 100%;
             height: 10vh;
             line-height: 10vh;
-            font-size: 3.7vh;
+            font-size: 3.5vh;
             color: #fafafa;
             text-align: center;
             padding-left: 5%;
@@ -273,9 +286,10 @@ body {
         #english, #malayalam{
             width: 48%;
             margin: auto;
+            font-size: 3.2vh;
         }
         #malayalam>label {
-            font-size: 5.5vh;
+            /*font-size: 5.5vh;*/
         }
 
 
@@ -368,7 +382,6 @@ body {
         .mylogocap{
 
             display: inline-block;
-            font-family: adam;
             font-size: 6vh;
             cursor: pointer;
             padding-top: 0.3vh;
@@ -517,9 +530,7 @@ body {
 
     .mylogocap{
 
-        font-family: "adam";
-        font-size: 1.7vw;
-        cursor: pointer;
+        font-size: 2vw;
     }
 
 
@@ -538,9 +549,9 @@ body {
     #mykdr_menu>li{
 
         font-family: "Segoe UI Semibold";
-        font-size: 1.2vw;
+        font-size: 1.1vw;
         display: inline-block;
-        margin-left: 0.5vw ;
+        margin-left: 0.7vw ;
         margin-top: 0.7vh;
         line-height: 4.8vh ;
         margin-bottom: 0.8vh;
@@ -561,7 +572,6 @@ body {
         text-decoration: wavy;
     }
     #english:hover,#malayalam:hover{
-        font-weight: bolder;
         text-decoration: wavy;
     }
     #english, #malayalam {
@@ -573,7 +583,7 @@ body {
         line-height: 4.8vh;
     }
     #malayalam{
-        font-size: 1.5vw;
+        /*font-size: 1.1vw;*/
     }
 
 
@@ -601,7 +611,7 @@ body {
     }
 
 
-    #home:hover>a,#landscape:hover>a,#culture:hover>a,#contact:hover>a,#people:hover>a,#trending:hover>a,#events:hover>a,#services:hover>a {
+    #home:hover>a,#landscape:hover>a,#culture:hover>a,#about:hover>a,#people:hover>a,#trending:hover>a,#events:hover>a,#services:hover>a {
 
         color: #008800;
         text-decoration: wavy;

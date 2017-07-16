@@ -6,23 +6,27 @@
         <div class="col-md-12">
 
             <div id="mykdr_logo">
-                <img class="mylogo" src="images/mykdrpng.png" href="#" alt="mykoduvayur" />
-                <label class="mylogocap" href="#">MYKODUVAYUR</label>
-                <label class="mymenuglyph" ng-click="opened();"><i class="fa fa-bars"></i></label>
+                <img class="mylogo" src="images/mykdrpng.png" href="#" alt="www.mykoduvayur.in" />
 
+                <a class="mylogocap" href="#">MYKODUVAYUR</a>
+                <label ng-click="opened" id="mymenuglyph"><i class="fa fa-bars"></i></label>
+                <label ng-click="closed" id="closenav"><i class="glyphicon glyphicon-remove"></i></label>
             </div>
 
             <ul id="mykdr_menu">
-                <li id="closenav" ng-click="closed();"><i class="fa fa-close"></i></li>
-                <li id="home" ><a href="#"><i class="fa fa-home"></i> HOME</a></li>
-                <li id="landscape"><a href="#landscape"><i class="fa fa-map"></i> LANDSCAPE</a></li>
-                <li id="culture"><a href="#culture"><i class="fa fa-bell"></i> CULTURE</a></li>
-                <li id="services"><a href="#services"><i class="fa fa-rupee"></i> SERVICES</a></li>
-                <li id="events"><a href="#events"><i class="fa fa-calendar"></i> EVENTS</a></li>
-                <li id="trending"><a href="#trending"><i class="fa fa-hashtag"></i> TRENDING</a></li>
-                <li id="people"><a href="#people"><i class="fa fa-users"></i> PEOPLE</a></li>
-                <li id="emergency"><a href="#emergency"><i class="fa fa-plus-square"></i> EMERGENCY </a></li>
-                <li id="contact"><a href="#contact"><i class="fa fa-universal-access"></i> ABOUT US</a></li>
+                <li id="language">
+                    <a ng-click="langselect" id="langmenu">&nbsp;<i class="fa fa-language"></i> LANGUAGE &nbsp; </a>
+                    <a ng-click="eng" id="english">&nbsp;<i class="fa fa-buysellads"></i> ENGLISH&nbsp;</a>
+                    <a ng-click="mal" id="malayalam">&nbsp;<label>മ</label> മലയാളം&nbsp;</a>
+                </li>
+                <li ng-click="menuload" id="home"><a href="#home"><i class="fa fa-home"></i> HOME</a></li>
+                <li ng-click="menuload" id="landscape"><a href="#landscape"><i class="glyphicon glyphicon-picture"></i> LANDSCAPE</a></li>
+                <li ng-click="menuload" id="culture"><a href="#culture"><i class="fa fa-bell"></i> CULTURE</a></li>
+                <li ng-click="menuload" id="services"><a href="#services"><i class="fa fa-rupee"></i> SERVICES</a></li>
+                <li ng-click="menuload" id="trending"><a href="#trending"><i class="fa fa-hashtag"></i> TRENDING</a></li>
+                <li ng-click="menuload" id="events"><a href="#events"><i class="fa fa-calendar"></i> EVENTS</a></li>
+                <li ng-click="menuload" id="emergency"><a href="#emergency"><i class="fa fa-plus-square"></i> EMERGENCY </a></li>
+                <li ng-click="menuload" id="contact"><a href="#about"><i class="fa fa-universal-access"></i> ABOUT US</a></li>
             </ul>
 
 
@@ -33,15 +37,6 @@
     <div class="col-md-12" id="non-nav">
         
         <img class="pagebanner" src="./images/covers/team.jpg" />
-
-        <div class="col-md-12">
-
-            <h1>hey</h1>
-            <h2>inga</h2>
-            <h3>paaru</h3>
-            <h4>kootu</h4>
-            <h5>joru</h5>
-        </div>
 
     </div>
 

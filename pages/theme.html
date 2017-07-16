@@ -1,65 +1,65 @@
-<script type="text/javascript">
+<!--<script type="text/javascript">-->
 
-    function closed() {
-        var z= document.getElementById("mymenuglyph");
-        z.style.display="inline-block";
-        var x= document.getElementById("mykdr_menu");
-        x.style.display="none";
-        var y= document.getElementById("closenav");
-        y.style.display="none";
+    <!--function closed() {-->
+        <!--var z= document.getElementById("mymenuglyph");-->
+        <!--z.style.display="inline-block";-->
+        <!--var x= document.getElementById("mykdr_menu");-->
+        <!--x.style.display="none";-->
+        <!--var y= document.getElementById("closenav");-->
+        <!--y.style.display="none";-->
 
-        var a= document.getElementById("langmenu");
-        a.style.display="inline-block";
+        <!--var a= document.getElementById("langmenu");-->
+        <!--a.style.display="inline-block";-->
 
-        var b= document.getElementById("english");
-        b.style.display="none";
-        var c= document.getElementById("malayalam");
-        c.style.display="none";
-    }
+        <!--var b= document.getElementById("english");-->
+        <!--b.style.display="none";-->
+        <!--var c= document.getElementById("malayalam");-->
+        <!--c.style.display="none";-->
+    <!--}-->
 
-    function opened() {
-        var z= document.getElementById("closenav");
-        z.style.display="inline-block";
-        var x= document.getElementById("mykdr_menu");
-        x.style.display="block";
-        var y= document.getElementById("mymenuglyph");
-        y.style.display="none";
-    }
+    <!--function opened() {-->
+        <!--var z= document.getElementById("closenav");-->
+        <!--z.style.display="inline-block";-->
+        <!--var x= document.getElementById("mykdr_menu");-->
+        <!--x.style.display="block";-->
+        <!--var y= document.getElementById("mymenuglyph");-->
+        <!--y.style.display="none";-->
+    <!--}-->
 
-    function langselect() {
-        var z= document.getElementById("langmenu");
-        z.style.display="none";
-        var x= document.getElementById("english");
-        x.style.display="inline-block";
-        var y= document.getElementById("malayalam");
-        y.style.display="inline-block";
-    }
+    <!--function langselect() {-->
+        <!--var z= document.getElementById("langmenu");-->
+        <!--z.style.display="none";-->
+        <!--var x= document.getElementById("english");-->
+        <!--x.style.display="inline-block";-->
+        <!--var y= document.getElementById("malayalam");-->
+        <!--y.style.display="inline-block";-->
+    <!--}-->
 
-    function eng() {
+    <!--function eng() {-->
 
-        alert("selected language: ENGLISH");
+        <!--alert("selected language: ENGLISH");-->
 
-        location.reload();
-    }
+        <!--location.reload();-->
+    <!--}-->
 
-    function mal() {
+    <!--function mal() {-->
 
-        alert("selected language: മലയാളം");
+        <!--alert("selected language: മലയാളം");-->
 
-        location.reload();
+        <!--location.reload();-->
 
-    }
+    <!--}-->
 
-    function menuload() {
+    <!--function menuload()() {-->
 
-        var c= document.getElementById("malayalam");
-        if(c.style.display=="inline-block")
-           {location.reload();}
-    }
+        <!--var c= document.getElementById("malayalam");-->
+        <!--if(c.style.display=="inline-block")-->
+           <!--{location.reload();}-->
+    <!--}-->
 
-</script>
+<!--</script>-->
 
-<div class="col-md-12" id="mypage">
+<div class="col-md-12" id="mypage" ng-controller="mainController">
 
     <nav id="mykdr_nav">
 
@@ -86,7 +86,7 @@
                 <li ng-click="menuload()" id="trending"><a href="#trending"><i class="fa fa-hashtag"></i> TRENDING</a></li>
                 <li ng-click="menuload()" id="events"><a href="#events"><i class="fa fa-calendar"></i> EVENTS</a></li>
                 <li ng-click="menuload()" id="emergency"><a href="#emergency"><i class="fa fa-plus-square"></i> EMERGENCY </a></li>
-                <li ng-click="menuload()" id="contact"><a href="#about"><i class="fa fa-universal-access"></i> ABOUT US</a></li>
+                <li ng-click="menuload()" id="about"><a href="#about"><i class="fa fa-universal-access"></i> ABOUT US</a></li>
             </ul>
 
 
