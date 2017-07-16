@@ -1,3 +1,63 @@
+<script type="text/javascript">
+
+    function closed() {
+        var z= document.getElementById("mymenuglyph");
+        z.style.display="inline-block";
+        var x= document.getElementById("mykdr_menu");
+        x.style.display="none";
+        var y= document.getElementById("closenav");
+        y.style.display="none";
+
+        var a= document.getElementById("langmenu");
+        a.style.display="inline-block";
+
+        var b= document.getElementById("english");
+        b.style.display="none";
+        var c= document.getElementById("malayalam");
+        c.style.display="none";
+    }
+
+    function opened() {
+        var z= document.getElementById("closenav");
+        z.style.display="inline-block";
+        var x= document.getElementById("mykdr_menu");
+        x.style.display="block";
+        var y= document.getElementById("mymenuglyph");
+        y.style.display="none";
+    }
+
+    function langselect() {
+        var z= document.getElementById("langmenu");
+        z.style.display="none";
+        var x= document.getElementById("english");
+        x.style.display="inline-block";
+        var y= document.getElementById("malayalam");
+        y.style.display="inline-block";
+    }
+
+    function eng() {
+
+        alert("selected language: ENGLISH");
+
+        location.reload();
+    }
+
+    function mal() {
+
+        alert("selected language: മലയാളം");
+
+        location.reload();
+
+    }
+
+    function menuload() {
+
+        var c= document.getElementById("malayalam");
+        if(c.style.display=="inline-block")
+           {location.reload();}
+    }
+
+</script>
 
 <div class="col-md-12" id="mypage">
 
@@ -8,24 +68,24 @@
             <div id="mykdr_logo">
                 <img class="mylogo" src="images/mykdrpng.png" href="#" alt="www.mykoduvayur.in" />
                 <label class="mylogocap" href="#">MYKODUVAYUR</label>
-                <label id="mymenuglyph" ng-click="opened()"><i class="fa fa-bars"></i></label>
-                <label id="closenav" ng-click="closed()"><i class="glyphicon glyphicon-remove"></i></label>
+                <label id="mymenuglyph" onclick="opened()"><i class="fa fa-bars"></i></label>
+                <label id="closenav" onclick="closed()"><i class="glyphicon glyphicon-remove"></i></label>
             </div>
 
             <ul id="mykdr_menu">
                 <li id="language">
-                    <a id="langmenu" ng-click="langselect()" >&nbsp;<i class="fa fa-language"></i> LANGUAGE &nbsp; </a>
-                    <a id="english" ng-click="eng()">&nbsp;<i class="fa fa-buysellads"></i> ENGLISH&nbsp;</a>
-                    <a id="malayalam" ng-click="mal()">&nbsp;<label>മ</label> മലയാളം&nbsp;</a>
+                    <a id="langmenu" onclick="langselect()" >&nbsp;<i class="fa fa-language"></i> LANGUAGE &nbsp; </a>
+                    <a id="english" onclick="eng()">&nbsp;<i class="fa fa-buysellads"></i> ENGLISH&nbsp;</a>
+                    <a id="malayalam" onclick="mal()">&nbsp;<label>മ</label> മലയാളം&nbsp;</a>
                 </li>
-                <li id="home" ng-click="menuload()"><a href="#"><i class="fa fa-home"></i> HOME</a></li>
-                <li id="landscape" ng-click="menuload()"><a href="#landscape"><i class="glyphicon glyphicon-picture"></i> LANDSCAPE</a></li>
-                <li id="culture" ng-click="menuload()"><a href="#culture"><i class="fa fa-bell"></i> CULTURE</a></li>
-                <li id="services" ng-click="menuload()"><a href="#services"><i class="fa fa-rupee"></i> SERVICES</a></li>
-                <li id="trending" ng-click="menuload()"><a href="#trending"><i class="fa fa-hashtag"></i> TRENDING</a></li>
-                <li id="events" ng-click="menuload()"><a href="#events"><i class="fa fa-calendar"></i> EVENTS</a></li>
-                <li id="emergency" ng-click="menuload()"><a href="#emergency"><i class="fa fa-plus-square"></i> EMERGENCY </a></li>
-                <li id="contact" ng-click="menuload()"><a href="#contact"><i class="fa fa-universal-access"></i> ABOUT US</a></li>
+                <li id="home" onclick="menuload()"><a href="#"><i class="fa fa-home"></i> HOME</a></li>
+                <li id="landscape" onclick="menuload()"><a href="#landscape"><i class="glyphicon glyphicon-picture"></i> LANDSCAPE</a></li>
+                <li id="culture" onclick="menuload()"><a href="#culture"><i class="fa fa-bell"></i> CULTURE</a></li>
+                <li id="services" onclick="menuload()"><a href="#services"><i class="fa fa-rupee"></i> SERVICES</a></li>
+                <li id="trending" onclick="menuload()"><a href="#trending"><i class="fa fa-hashtag"></i> TRENDING</a></li>
+                <li id="events" onclick="menuload()"><a href="#events"><i class="fa fa-calendar"></i> EVENTS</a></li>
+                <li id="emergency" onclick="menuload()"><a href="#emergency"><i class="fa fa-plus-square"></i> EMERGENCY </a></li>
+                <li id="contact" onclick="menuload()"><a href="#contact"><i class="fa fa-universal-access"></i> ABOUT US</a></li>
             </ul>
 
 
