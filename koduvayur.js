@@ -19,7 +19,7 @@ mykdrApp.config(function($routeProvider) {
         .when('/home', {
             templateUrl : 'pages/home.html',
             controller  : 'homeController'
-        });
+        })
 
         // route for the landscape page
         .when('/landscape', {
