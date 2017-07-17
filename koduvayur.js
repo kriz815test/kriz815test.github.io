@@ -59,6 +59,8 @@ mykdrApp.config(function($routeProvider) {
        
 });
 
+
+
 // create the controller and inject Angular's $scope
 mykdrApp.controller('mainController', function($scope) {
     // create a message to display in our view
@@ -103,7 +105,7 @@ mykdrApp.controller('mainController', function($scope) {
 
         alert("selected language: ENGLISH");
 
-        location.reload();
+        location.reload(true);
     };
 
     $scope.mal = function() {
@@ -125,16 +127,17 @@ mykdrApp.controller('mainController', function($scope) {
 
 mykdrApp.controller('homeController', function($scope) {
     $scope.message = 'Look! I am an about page.';
-    
-    $scope.closed = function() {
-        var x= document.getElementById("mykdr_menu");
-        x.style.display="none";
+
+    $scope.closed = function () {
+        var x = document.getElementById("mykdr_menu");
+        x.style.display = "none";
     };
 
-    $scope.opened = function() {
-        var x= document.getElementById("mykdr_menu");
-        x.style.display="block";
+    $scope.opened = function () {
+        var x = document.getElementById("mykdr_menu");
+        x.style.display = "block";
     };
+});
 
 mykdrApp.controller('landscapeController', function($scope) {
     $scope.message = 'Look! I am an about page.';
@@ -150,7 +153,7 @@ mykdrApp.controller('landscapeController', function($scope) {
     };
 });
 
-mykdrApp.controller('abouttController', function($scope) {
+mykdrApp.controller('aboutController', function($scope) {
     $scope.message = 'Contact us! JK. This is just a demo.';
     
     $scope.closed = function() {
@@ -233,8 +236,4 @@ mykdrApp.controller('trendingController', function($scope) {
         x.style.display="block";
     };
 });
-
-
-});
-
 
