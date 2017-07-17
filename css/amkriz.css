@@ -133,7 +133,7 @@ body {
 }
 
 .mylogocap{
-    color: #5B3930 !important;
+    color: #4b3930 !important;
     cursor: pointer;
     font-weight: bold;
     font-family: 'Segoe UI Light';
@@ -222,7 +222,7 @@ body {
             height: 6.5vh;
             width: 6.9vh;
             position: relative;
-            margin: 0 -2px 2vh 0;
+            margin: 0 -2px 3vh 0;
             padding: 0 0 0 0;
         }
 
@@ -373,7 +373,7 @@ body {
             height: 9.4vh;
             width: 10vh;
             position: relative;
-            margin: 0 0 2vh 0;
+            margin: 0 0 3vh 0;
             margin-right: -2px;
         }
 
