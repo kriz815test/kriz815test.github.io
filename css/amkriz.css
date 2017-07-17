@@ -184,7 +184,7 @@ body {
         #mykdr_nav{
 
 
-            height: 9vh;
+            height: 8vh;
             margin-top: 0;
 
         }
@@ -192,9 +192,9 @@ body {
 
         .bannermob {
 
-            margin-top: 9vh;
+            margin-top: 8vh;
             width: 100%;
-            height: 91vh;
+            height: 92vh;
 
         }
 
@@ -202,36 +202,33 @@ body {
 
 
             color: #1c1c1c;
-            height:9vh;
+            height: 8vh;
             width: 100%;
-            line-height: 4vh;
-            padding: 0.7vh 0 0.8vh 0;
+            line-height: 8vh;
             cursor: pointer;
             display: block;
             float: left;
             position: relative;
+            padding: 0;
+            margin: 0;
         }
 
         .mylogo{
             display: inline-block;
-            height: 7vh;
-            width: 7vh;
-            line-height : 100%;
-            font-size: 7vh;
+            height: 6.5vh;
+            width: 6.9vh;
             position: relative;
-            padding: 0;
-            margin-right: -2px;
-            padding-bottom: 1vh;
-            margin-bottom: 1.5vh;
+            margin: 0 -2px 2vh 0;
+            padding: 0 0 0 0;
         }
 
         .mylogocap{
 
             display: inline-block;
             /*font-family: "Arial Rounded MT Bold" !important;*/
-            font-size: 4.8vh;
+            font-size: 5vh;
             cursor: pointer;
-            padding-top: 2vh;
+            padding: 0 0 0 0;
         }
 
         #mymenuglyph{
@@ -241,7 +238,7 @@ body {
             color: #1c1c1c;
             cursor: pointer;
             float: right;
-            padding-top: 1.3vh;
+            padding: 0.8vh 0 1vh 0;
         }
 
         #closenav{
@@ -250,7 +247,7 @@ body {
             color: #1c1c1c;
             cursor: pointer;
             float: right;
-            padding-top: 1.3vh;
+            padding: 0.8vh 0 1vh 0;
         }
 
         #mykdr_menu{
@@ -258,12 +255,12 @@ body {
             display: none;
             position: fixed;
             width: 100%;
-            height: 91vh;
+            height: 92vh;
             background-color: rgba(220,215,215, 0.9);
             margin: 0;
             padding: 0;
             left: 0;
-            top: 9vh;
+            top: 8vh;
             font-family: "Segoe UI Semibold", serif;
         }
 
@@ -272,8 +269,8 @@ body {
             display: block;
             position: relative;
             width: 100%;
-            height: 10vh;
-            line-height: 10vh;
+            height: 9vh;
+            line-height: 9vh;
             font-size: 3.5vh;
             color: #fafafa;
             text-align: center;
@@ -310,7 +307,7 @@ body {
             color: #ffffff !important;
         }
         #language:hover>a {
-            color: #2aabd2 !important;
+            color: #2163e2 !important;
         }
 
         #emergency:hover>a {
@@ -326,7 +323,7 @@ body {
 
         .pagebanner
         {
-            margin-top: 9vh;
+            margin-top: 8vh;
             width: 100%;
             height: auto;
         }
@@ -339,7 +336,7 @@ body {
         #mykdr_nav{
 
 
-            height: 10vh;
+            height: 12vh;
             margin-top: 0;
 
         }
@@ -347,9 +344,9 @@ body {
 
         .bannerpc {
 
-            margin-top: 10vh;
+            margin-top: 12vh;
             width: 100%;
-            height: 90vh;
+            height: 88vh;
 
         }
 
@@ -357,10 +354,9 @@ body {
 
 
             color: #1c1c1c;
-            height: 10vh;
+            height: 12vh;
             width: 100%;
-            line-height: 7vh;
-            padding: 0.7vh 0 0.8vh 0;
+            line-height: 12vh;
             cursor: pointer;
             display: block;
             float: left;
@@ -370,27 +366,24 @@ body {
         .mylogo{
 
             display: inline-block;
-            height: 7vh;
-            width: 7vh;
-            line-height: 4vh;
+            height: 9.4vh;
+            width: 10vh;
             position: relative;
-            padding: 0;
+            margin: 0 0 2vh 0;
             margin-right: -2px;
-            margin-bottom: 1.5vh;
         }
 
         .mylogocap{
 
             display: inline-block;
-            font-size: 6vh;
+            font-size: 7vh;
             cursor: pointer;
-            padding-top: 0.3vh;
         }
 
         #mymenuglyph{
 
             display: inline-block;
-            font-size: 6vh;
+            font-size: 7vh;
             color: #1c1c1c;
             cursor: pointer;
             float: right;
@@ -400,24 +393,24 @@ body {
         #closenav{
 
             display: none;
-            font-size: 6vh;
+            font-size: 7vh;
             color: #1c1c1c;
             cursor: pointer;
             float: right;
             padding-top: 0.4vh;
-
         }
+
 
         #mykdr_menu{
 
             display: none;
             position: fixed;
             width: 100%;
-            height: 90vh;
+            height: 88vh;
             background-color: rgba(220,215,215, 0.9);
             padding: 0;
             left: 0;
-            top: 10vh;
+            top: 12vh;
 
             font-family: "Segoe UI Semibold";
         }
@@ -427,8 +420,8 @@ body {
             display: inline-block;
             position: relative;
             width: 49.6%;
-            height: 18vh;
-            line-height: 18vh;
+            height: 14vh;
+            line-height: 14vh;
             color: #fafafa;
             text-align: center;
             margin: 0 auto;
@@ -437,18 +430,15 @@ body {
             /*border-bottom: solid 1px rgba(08,08,08,0.7);*/
         }
         #mykdr_menu>li>a{
-            font-size: 5.5vh;
+            font-size: 5vh;
         }
         #mykdr_menu>li>i{
-            font-size: 5.5vh;
+            font-size: 5vh;
         }
 
         #english, #malayalam{
             width: 49%;
             margin: auto;
-        }
-        #malayalam{
-            font-size: 7vh !important;
         }
 
         #mykdr_menu>li:hover {
@@ -469,7 +459,7 @@ body {
             color: #ffffff !important;
         }
         #language:hover>a {
-            color: #2aabd2 !important;
+            color: #2163e2 !important;
         }
 
 
@@ -486,7 +476,7 @@ body {
 
         .pagebanner
         {
-            margin-top: 10vh;
+            margin-top: 12vh;
             width: 100%;
             height: auto;
         }
