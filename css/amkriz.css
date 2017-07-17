@@ -47,8 +47,8 @@
     src: url("/fonts/ktf.ttf");
 }
 @font-face {
-    font-family: adam, serif;
-    src: url("/fonts/adam.otf");
+    font-family: 'adam';
+    src: url("/fonts/ADAM.CG PRO.otf") format('opentype');
 }
 @font-face {
     font-family: chilanka , serif;
@@ -136,7 +136,7 @@ body {
     color: #5B3930 !important;
     cursor: pointer;
     font-weight: bold;
-    font-family: "Segoe UI Symbol";
+    font-family: 'Segoe UI Light';
 }
 .mylogocap:hover{
     text-decoration: wavy !important;
