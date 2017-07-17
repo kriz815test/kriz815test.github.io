@@ -169,6 +169,10 @@ body {
     display: inline-block;
 }
 
+.pagebanner{
+    border-bottom: 1px solid #1c1c1c;
+}
+
 
 @media(max-width: 300px){
 
