@@ -222,7 +222,7 @@ body {
             height: 6.5vh;
             width: 6.9vh;
             position: relative;
-            margin: 0 -2px 3vh 0;
+            margin: 0 -2px 2.5vh 0;
             padding: 0 0 0 0;
         }
 
@@ -242,7 +242,7 @@ body {
             color: #1c1c1c;
             cursor: pointer;
             float: right;
-            padding: 0.8vh 0 1vh 0;
+            padding: 0.5vh 0 0 0;
         }
 
         #closenav{
@@ -373,7 +373,7 @@ body {
             height: 9.4vh;
             width: 10vh;
             position: relative;
-            margin: 0 0 3vh 0;
+            margin: 0 0 2.5vh 0;
             margin-right: -2px;
         }
 
@@ -382,6 +382,7 @@ body {
             display: inline-block;
             font-size: 7vh;
             cursor: pointer;
+            padding: 0 0 0 0;
         }
 
         #mymenuglyph{
@@ -391,7 +392,7 @@ body {
             color: #1c1c1c;
             cursor: pointer;
             float: right;
-            padding-top: 0.4vh;
+            padding-top: 0.3vh;
         }
 
         #closenav{
