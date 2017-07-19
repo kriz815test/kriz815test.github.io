@@ -65,7 +65,10 @@ mykdrApp.config(function($routeProvider) {
 mykdrApp.controller('mainController', function($scope) {
     // create a message to display in our view
     $scope.message = 'Everyone come and see how good I look!';
-    
+
+    $scope.change = false;
+    $scope.myLang = "ENGLISH";
+
      $scope.closed = function() {
         var z= document.getElementById("mymenuglyph");
         z.style.display="inline-block";
@@ -103,26 +106,32 @@ mykdrApp.controller('mainController', function($scope) {
 
     $scope.eng = function() {
 
+        $scope.change = true;
+        $scope.myLang = "ENGLISH";
         alert("selected language: ENGLISH");
+        $scope.menuload();
 
-        location.reload(true);
     };
 
     $scope.mal = function() {
 
+        $scope.change = true;
+        $scope.myLang = " മലയാളം";
         alert("selected language: മലയാളം");
-
-        location.reload();
+        $scope.menuload();
 
     };
 
     $scope.menuload = function() {
 
-        var c= document.getElementById("malayalam");
-        if(c.style.display==="inline-block")
-           {location.reload();}
-    };
+        if($scope.change === true) {
 
+           $scope.change = false;
+           location.reload();
+
+        }
+
+    };
 });
 
 mykdrApp.controller('homeController', function($scope) {
