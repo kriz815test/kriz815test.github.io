@@ -47,11 +47,11 @@
     src: url("/fonts/ktf.ttf");
 }
 @font-face {
-    font-family: 'adam';
-    src: url("/fonts/ADAM.CG PRO.otf") format('opentype');
+    font-family: adam;
+    src: url("/fonts/adam.otf") format('opentype');
 }
 @font-face {
-    font-family: chilanka , serif;
+    font-family: chilanka;
     src: url("/fonts/chilanka.ttf") format('truetype');
 }
 @font-face {
@@ -61,6 +61,10 @@
 @font-face {
     font-family: keraleeyam, serif;
     src: url("/fonts/keraleeyam.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'malayalamIcon';
 }
 
 img {
@@ -102,17 +106,6 @@ body {
 
 }
 
-
-#non-nav{
-    margin: 0;
-    padding: 0;
-    display: block;
-}
-
-
-
-
-
 #bannerdiv{
     display: block;
     overflow: hidden;
@@ -137,47 +130,96 @@ body {
     cursor: pointer;
     font-weight: bold;
     font-family: 'Segoe UI Light';
+    text-decoration: wavy !important;
 }
 .mylogocap:hover{
     text-decoration: wavy !important;
 }
+.mylogocap:active{
+    text-decoration: wavy !important;
+}
+
 
 #english {
     display: none;
-    color: #2aabd2 !important;
+    color: #E6E6FA !important;
 }
-
 #malayalam {
     display: none;
-    color: #2aabd2 !important;
+    color: #E6E6FA !important;
+    font-weight: bold;
+}
+#english:hover,#malayalam:hover,#english:hover>i, #malayalam:hover>label{
+    color: #FF6347 !important;
 }
 
 #english>i{
-    color: #ee1111;
+    color: #FF6347;
     display: inline-block;
+    font-size: larger;
 }
-
-#malayalam {
-    font-family: 'manjari';
-    font-weight: bold;
-}
-
 #malayalam>label {
-    font-family: 'chilanka';
     font-weight: bolder;
-    color: #ee1111;
+    color: #FF6347;
     display: inline-block;
+    font-size: larger;
 }
 
 .pagebanner{
     border-bottom: 1px solid #1c1c1c;
 }
 
+#mykdr_menu>li{
+    font-family: "Segoe UI Semibold";
+}
+
+
 #mykdr_menu>li>a:hover {
-    color: green;
-    text-decoration: none;
+    color: #228B22;
+}
+#mykdr_menu>li>a:hover {
+     text-decoration: wavy !important;
 
 }
+#mykdr_menu>li>a:active {
+    text-decoration: wavy !important;
+
+}
+
+#language{
+    background-color: #34495E !important;
+}
+
+#langmenu {
+    color: #E6E6FA !important;
+}
+#langmenu:hover,#langmenu>i {
+    color: #00BFFF !important;
+}
+#language:hover>#langmenu {
+    color: #00BFFF !important;
+}
+
+#alertlang {
+    display: block;
+    position: fixed;
+    z-index: 9999;
+    border-radius: 6px;
+    overflow: hidden;
+    text-align: center;
+    opacity: 0.93;
+}
+
+#emergency:hover>a, #emergency:hover>a>i {
+    color: red !important;
+    text-decoration: wavy;
+}
+
+#mykdr_menu>li>a{
+    color: #5b3930;
+    cursor: pointer;
+}
+
 
 @media(max-width: 300px){
 
@@ -187,21 +229,35 @@ body {
 
 @media (max-width: 1080px){
 
+    #mykdr_menu>li:hover {
+
+        background-color: rgba(08,08,08,0.1);
+    }
+
+    #language{
+        width: 100% !important;
+    }
+
 
     @media (orientation: portrait) {
 
         #mykdr_nav{
-
-
+            top: 0;
             height: 8vh;
-            margin-top: 0;
+            margin: 0;
 
         }
+
+        #non-nav{
+            margin-top: 8vh;
+            padding: 0;
+            display: block;
+        }
+
 
 
         .bannermob {
 
-            margin-top: 8vh;
             width: 100%;
             height: 92vh;
 
@@ -270,7 +326,6 @@ body {
             padding: 0;
             left: 0;
             top: 8vh;
-            font-family: "Segoe UI Semibold", serif;
         }
 
         #mykdr_menu>li{
@@ -294,45 +349,17 @@ body {
             margin: auto;
             font-size: 3.2vh;
         }
-        #malayalam>label {
-            /*font-size: 5.5vh;*/
-        }
 
-
-        #mykdr_menu>li:hover {
-
-            background-color: rgba(08,08,08,0.1);
-        }
-        #mykdr_menu>li:hover>a {
-            color: green;
-            text-underline: none;
-
-        }
-
-        #language {
-            background-color: #5B3930 !important;
-        }
-        #language>a {
-            color: #ffffff !important;
-        }
-        #language:hover>a {
-            color: #2163e2 !important;
-        }
-
-        #emergency:hover>a {
-
-            color: red !important;
-            text-underline: none;
-        }
-
-        #mykdr_menu>li>a{
-            color: #5b3930;
-            cursor: pointer;
+        #alertlang{
+            top: 8vh;
+            width: 100vw;
+            height: 8vh;
+            line-height: 100%;
+            font-size: 5vw;
         }
 
         .pagebanner
         {
-            margin-top: 8vh;
             width: 100%;
             height: auto;
         }
@@ -344,16 +371,20 @@ body {
 
         #mykdr_nav{
 
-
+            top: 0;
             height: 12vh;
             margin-top: 0;
 
         }
 
+        #non-nav{
+            margin-top: 12vh;
+            padding: 0;
+            display: block;
+        }
 
         .bannerpc {
 
-            margin-top: 12vh;
             width: 100%;
             height: 88vh;
 
@@ -421,8 +452,6 @@ body {
             padding: 0;
             left: 0;
             top: 12vh;
-
-            font-family: "Segoe UI Semibold";
         }
 
         #mykdr_menu>li{
@@ -451,42 +480,16 @@ body {
             margin: auto;
         }
 
-        #mykdr_menu>li:hover {
-
-            background-color: rgba(08,08,08,0.1);
-        }
-        #mykdr_menu>li:hover>a {
-                color: green;
-                text-decoration: none;
-
-        }
-
-        #language {
-            width: 100% !important;
-            background-color: #5B3930 !important;
-        }
-        #language>a {
-            color: #ffffff !important;
-        }
-        #language:hover>a {
-            color: #2163e2 !important;
-        }
-
-
-        #emergency:hover>a {
-
-            color: red !important;
-            text-decoration: none;
-        }
-
-        #mykdr_menu>li>a{
-            color: #5b3930;
-            cursor: pointer;
+        #alertlang{
+            top: 12vh;
+            width: 100vw;
+            height: 12vh;
+            line-height: 100%;
+            font-size: 3vw;
         }
 
         .pagebanner
         {
-            margin-top: 12vh;
             width: 100%;
             height: auto;
         }
@@ -506,6 +509,13 @@ body {
         height: 8vh;
 
     }
+
+    #non-nav{
+        margin-top: 8vh;
+        padding: 0;
+        display: block;
+    }
+
 
     #mykdr_logo {
 
@@ -534,8 +544,6 @@ body {
     }
 
 
-
-
     #mykdr_menu{
 
         line-height: 6.5vh;
@@ -548,48 +556,25 @@ body {
 
     #mykdr_menu>li{
 
-        font-family: "Segoe UI Semibold";
         font-size: 1.1vw;
         display: inline-block;
         margin-left: 0.7vw ;
-        margin-top: 0.7vh;
         line-height: 4.8vh ;
-        margin-bottom: 0.8vh;
         padding: 2px 2px 2px 2px;
+
     }
+
+    /*#home,#landscape,#culture,#services,#trending,#events,#emergency,#about {  }*/
 
     #language{
         margin-bottom: 1vh;
-    }
-    #langmenu{
-        background-color: #5b3930;
-        padding: 1vh 0.5vh 1vh 0.5vh;
         border-radius: 6px;
-        color: #fbfbfb !important;
-    }
-    #langmenu:hover{
-        color: #2163e2 !important;
-        text-decoration: wavy;
-    }
-    #english:hover,#malayalam:hover{
-        text-decoration: wavy;
-    }
-    #english, #malayalam {
-        color: #5B3930 !important;
-        line-height: 4.8vh;
-    }
-    #english:hover, #malayalam:hover {
-        color: #2163e2 !important;
-        line-height: 4.8vh;
-    }
-    #malayalam{
-        /*font-size: 1.1vw;*/
+        cursor: pointer;
     }
 
 
     #bannerdiv{
 
-        margin-top: 8vh;
         height:92vh;
 
     }
@@ -610,28 +595,17 @@ body {
         display: none!important;
     }
 
-
-    #home:hover>a,#landscape:hover>a,#culture:hover>a,#about:hover>a,#people:hover>a,#trending:hover>a,#events:hover>a,#services:hover>a {
-
-        color: #008800;
-        text-decoration: wavy;
-
+    #alertlang{
+        width: 25vw;
+        height: 10vh;
+        line-height: 7vh;
+        font-size: large;
+        right: 0;
     }
 
-    #emergency:hover>a {
-
-        color: red !important;
-        text-decoration: wavy;
-    }
-
-    #mykdr_menu>li>a{
-        color: #5b3930;
-        cursor: pointer;
-    }
 
     .pagebanner
     {
-        margin-top: 8vh;
         width: 100%;
         height: auto;
     }
