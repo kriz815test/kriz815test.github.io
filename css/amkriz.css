@@ -95,7 +95,7 @@ body {
 
 
 #mykdr_nav{
-
+    top: 0;
     display: block;
     margin: 0;
     position: fixed;
