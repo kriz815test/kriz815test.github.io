@@ -1,64 +1,3 @@
-<!--<script type="text/javascript">-->
-
-    <!--function closed() {-->
-        <!--var z= document.getElementById("mymenuglyph");-->
-        <!--z.style.display="inline-block";-->
-        <!--var x= document.getElementById("mykdr_menu");-->
-        <!--x.style.display="none";-->
-        <!--var y= document.getElementById("closenav");-->
-        <!--y.style.display="none";-->
-
-        <!--var a= document.getElementById("langmenu");-->
-        <!--a.style.display="inline-block";-->
-
-        <!--var b= document.getElementById("english");-->
-        <!--b.style.display="none";-->
-        <!--var c= document.getElementById("malayalam");-->
-        <!--c.style.display="none";-->
-    <!--}-->
-
-    <!--function opened() {-->
-        <!--var z= document.getElementById("closenav");-->
-        <!--z.style.display="inline-block";-->
-        <!--var x= document.getElementById("mykdr_menu");-->
-        <!--x.style.display="block";-->
-        <!--var y= document.getElementById("mymenuglyph");-->
-        <!--y.style.display="none";-->
-    <!--}-->
-
-    <!--function langselect() {-->
-        <!--var z= document.getElementById("langmenu");-->
-        <!--z.style.display="none";-->
-        <!--var x= document.getElementById("english");-->
-        <!--x.style.display="inline-block";-->
-        <!--var y= document.getElementById("malayalam");-->
-        <!--y.style.display="inline-block";-->
-    <!--}-->
-
-    <!--function eng() {-->
-
-        <!--alert("selected language: ENGLISH");-->
-
-        <!--location.reload();-->
-    <!--}-->
-
-    <!--function mal() {-->
-
-        <!--alert("selected language: മലയാളം");-->
-
-        <!--location.reload();-->
-
-    <!--}-->
-
-    <!--function menuload()() {-->
-
-        <!--var c= document.getElementById("malayalam");-->
-        <!--if(c.style.display=="inline-block")-->
-           <!--{location.reload();}-->
-    <!--}-->
-
-<!--</script>-->
-
 <div class="col-md-12" id="mypage" ng-controller="mainController">
 
     <nav id="mykdr_nav">
@@ -67,7 +6,6 @@
 
             <div id="mykdr_logo">
                 <img class="mylogo" src="images/mykdrpng.png" href="#" alt="www.mykoduvayur.in" />
-                
                 <a class="mylogocap" href="#">MYKODUVAYUR</a>
                 <label ng-click="opened()" id="mymenuglyph"><i class="fa fa-bars"></i></label>
                 <label ng-click="closed()" id="closenav"><i class="glyphicon glyphicon-remove"></i></label>
@@ -89,20 +27,19 @@
                 <li ng-click="menuload()" id="about"><a href="#about"><i class="fa fa-universal-access"></i> ABOUT US</a></li>
             </ul>
 
+        </div>
 
+        <div id="alertlang" class="alert alert-success" role="alert">
+            <a href="" class="close" aria-label="close" ng-click="alertClose()">×</a>
+            Selected Language: <strong>{{myLang}}</strong>
         </div>
 
     </nav>
 
     <div class="col-md-12" id="non-nav">
 
-        <div id="bannerdiv">
-
-            <img class="mob bannermob" src="./images/wallmob.jpg"/>
-            <img class="pc bannerpc" src="./images/wallpc.jpg"/>
-
-
-        </div>
+        <img class="mob bannermob" src="./images/theme/wallmob.jpg"/>
+        <img class="pc bannerpc" src="./images/theme/wallpc.jpg"/>
 
     </div>
 
