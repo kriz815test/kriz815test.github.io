@@ -14,8 +14,8 @@ mykdrApp.config(function($routeProvider) {
             templateUrl : 'pages/theme.html',
             controller  : 'mainController'
         })
-    
-     // route for the home page
+
+        // route for the home page
         .when('/home', {
             templateUrl : 'pages/home.html',
             controller  : 'homeController'
@@ -56,20 +56,27 @@ mykdrApp.config(function($routeProvider) {
             templateUrl : 'pages/trending.html',
             controller  : 'trendingController'
         })
-       
+
+});
+
+
+// inject rootScope variables
+mykdrApp.run(function($rootScope) {
+
+    $rootScope.langChange = false;
+    $rootScope.myLang = "ENGLISH";
+
 });
 
 
 
 // create the controller and inject Angular's $scope
-mykdrApp.controller('mainController', function($scope) {
+mykdrApp.controller('mainController', function($rootScope, $scope) {
     // create a message to display in our view
     $scope.message = 'Everyone come and see how good I look!';
 
-    $scope.change = false;
-    $scope.myLang = "ENGLISH";
 
-     $scope.closed = function() {
+    $scope.closed = function() {
         var z= document.getElementById("mymenuglyph");
         z.style.display="inline-block";
         var x= document.getElementById("mykdr_menu");
@@ -106,143 +113,119 @@ mykdrApp.controller('mainController', function($scope) {
 
     $scope.eng = function() {
 
-        $scope.change = true;
-        $scope.myLang = "ENGLISH";
-        alert("selected language: ENGLISH");
-        $scope.menuload();
+        var mm = window.matchMedia("(max-width:1080px)");
+        if(mm.matches) {
+            $scope.closed();
+        }
+
+        var w = document.getElementById("alertlang");
+        w.style.display = "block";
+
+        $rootScope.langChange = true;
+        $rootScope.myLang = "ENGLISH";
+
+        var z= document.getElementById("langmenu");
+        z.style.display="inline-block";
+        var x= document.getElementById("english");
+        x.style.display="none";
+        var y= document.getElementById("malayalam");
+        y.style.display="none";
 
     };
 
     $scope.mal = function() {
 
-        $scope.change = true;
-        $scope.myLang = " മലയാളം";
-        alert("selected language: മലയാളം");
-        $scope.menuload();
+        var mm = window.matchMedia("(max-width:1080px)");
+        if(mm.matches) {
+            $scope.closed();
+        }
 
+        var w = document.getElementById("alertlang");
+        w.style.display = "block";
+
+        $rootScope.langChange = true;
+        $rootScope.myLang = " മലയാളം";
+
+        var z= document.getElementById("langmenu");
+        z.style.display="inline-block";
+        var x= document.getElementById("english");
+        x.style.display="none";
+        var y= document.getElementById("malayalam");
+        y.style.display="none";
+
+    };
+
+    $rootScope.alertClose = function() {
+
+        var x = document.getElementById("alertlang");
+        x.style.display = "none";
+
+        $rootScope.langChange = false;
     };
 
     $scope.menuload = function() {
 
-        if($scope.change === true) {
-
-           $scope.change = false;
-           location.reload();
-
-        }
-
-    };
-});
-
-mykdrApp.controller('homeController', function($scope) {
-    $scope.message = 'Look! I am an about page.';
-
-    $scope.closed = function () {
-        var x = document.getElementById("mykdr_menu");
+        var x = document.getElementById("alertlang");
         x.style.display = "none";
+
+        $rootScope.langChange = false;
+
     };
 
-    $scope.opened = function () {
-        var x = document.getElementById("mykdr_menu");
-        x.style.display = "block";
-    };
+    // window.setTimeout(function() {
+    //     $(".alert").fadeTo(500, 0).slideUp(500, function(){
+    //         $(this).remove();
+    //     });
+    // }, 8000);
+
 });
 
-mykdrApp.controller('landscapeController', function($scope) {
+mykdrApp.controller('homeController', function($rootScope, $scope) {
     $scope.message = 'Look! I am an about page.';
-    
-    $scope.closed = function() {
-        var x= document.getElementById("mykdr_menu");
-        x.style.display="none";
-    };
 
-    $scope.opened = function() {
-        var x= document.getElementById("mykdr_menu");
-        x.style.display="block";
-    };
+
 });
 
-mykdrApp.controller('aboutController', function($scope) {
+mykdrApp.controller('landscapeController', function($rootScope, $scope) {
+    $scope.message = 'Look! I am an about page.';
+
+
+});
+
+mykdrApp.controller('aboutController', function($rootScope, $scope) {
     $scope.message = 'Contact us! JK. This is just a demo.';
-    
-    $scope.closed = function() {
-        var x= document.getElementById("mykdr_menu");
-        x.style.display="none";
-    };
 
-    $scope.opened = function() {
-        var x= document.getElementById("mykdr_menu");
-        x.style.display="block";
-    };
+
 });
 
-mykdrApp.controller('servicesController', function($scope) {
+mykdrApp.controller('servicesController', function($rootScope, $scope) {
     $scope.message = 'Look! I am an about page.';
-    
-    $scope.closed = function() {
-        var x= document.getElementById("mykdr_menu");
-        x.style.display="none";
-    };
 
-    $scope.opened = function() {
-        var x= document.getElementById("mykdr_menu");
-        x.style.display="block";
-    };
+
 });
 
-mykdrApp.controller('emergencyController', function($scope) {
+mykdrApp.controller('emergencyController', function($rootScope, $scope) {
     $scope.message = 'Look! I am an about page.';
-    
-    $scope.closed = function() {
-        var x= document.getElementById("mykdr_menu");
-        x.style.display="none";
-    };
 
-    $scope.opened = function() {
-        var x= document.getElementById("mykdr_menu");
-        x.style.display="block";
-    };
+
 });
 
-mykdrApp.controller('cultureController', function($scope) {
+mykdrApp.controller('cultureController', function($rootScope, $scope) {
     $scope.message = 'Look! I am an about page.';
-    
-    $scope.closed = function() {
-        var x= document.getElementById("mykdr_menu");
-        x.style.display="none";
-    };
 
-    $scope.opened = function() {
-        var x= document.getElementById("mykdr_menu");
-        x.style.display="block";
-    };
+
 });
 
-mykdrApp.controller('eventsController', function($scope) {
+mykdrApp.controller('eventsController', function($rootScope, $scope) {
     $scope.message = 'Look! I am an about page.';
-    
-    $scope.closed = function() {
-        var x= document.getElementById("mykdr_menu");
-        x.style.display="none";
-    };
 
-    $scope.opened = function() {
-        var x= document.getElementById("mykdr_menu");
-        x.style.display="block";
-    };
+
 });
 
-mykdrApp.controller('trendingController', function($scope) {
+mykdrApp.controller('trendingController', function($rootScope, $scope) {
     $scope.message = 'Look! I am an about page.';
-    
-    $scope.closed = function() {
-        var x= document.getElementById("mykdr_menu");
-        x.style.display="none";
-    };
 
-    $scope.opened = function() {
-        var x= document.getElementById("mykdr_menu");
-        x.style.display="block";
-    };
+
 });
+
 
