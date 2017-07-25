@@ -36,7 +36,7 @@
 
         #intro,#behindlogo,#guide,#koduvayur {
             padding: 0;
-            font-size: 2.3vh;
+            font-size: 2.5vh;
             font-family: "Segoe UI";
             border-left: solid #8b0000 1vw;
             margin-bottom: 4vh;
@@ -96,7 +96,7 @@
         #footer>p {
             color: snow;
             font-family: "Segoe UI";
-            font-size: 2.3vh;
+            font-size: 2.5vh;
             line-height: 5vh;
         }
         #follow {
@@ -104,7 +104,7 @@
         }
         #follow>a>i {
             display: inline-block;
-            font-size: 3.5vh;
+            font-size: 3.8vh;
 
         }
         #mobshare {
@@ -146,7 +146,7 @@
             color: #257366 !important;
         }
         #mobshare>a>i {
-            font-size: 6vh;
+            font-size: 6.3vh;
             padding-left: 5vw;
             padding-right: 5vw;
         }
@@ -189,7 +189,7 @@
 
         #intro,#behindlogo,#guide,#koduvayur {
             padding: 0;
-            font-size: 4vh;
+            font-size: 4.2vh;
             font-family: "Segoe UI";
             border-left: solid #8b0000 1vh;
             margin-bottom: 7vh;
@@ -249,7 +249,7 @@
         #footer>p {
             color: snow;
             font-family: "Segoe UI";
-            font-size: 4vh;
+            font-size: 4.2vh;
             line-height: 12vh;
         }
         #follow {
@@ -304,7 +304,7 @@
             color: #257366 !important;
         }
         #mobshare>a>i {
-            font-size: 10vh;
+            font-size: 11vh;
             padding-left: 8vw;
             padding-right: 8vw;
         }
