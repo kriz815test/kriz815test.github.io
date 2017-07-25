@@ -180,19 +180,19 @@
             display: block;
             padding: 1vw 1vw 1vw 1vw;
             margin: 0;
-            margin-bottom: 2vh;
+            margin-bottom: 3vh;
         }
         #adslot1_mob>div, #adslot2_mob>div {
-            height: 12vh;
+            height: 16vh;
             background-color: #ce8483;
         }
 
         #intro,#behindlogo,#guide,#koduvayur {
             padding: 0;
-            font-size: 3.2vh;
+            font-size: 4vh;
             font-family: "Segoe UI";
             border-left: solid #8b0000 1vh;
-            margin-bottom: 6vh;
+            margin-bottom: 7vh;
         }
         #intro>p, #behindlogo>p, #koduvayur>p {
             text-indent: 8vw;
@@ -207,8 +207,8 @@
             margin-left: 2vh;
             color: #2F4F4F;
             border-bottom: #FF6347 2px solid;
-            font-size: 6vh !important;
-            margin-bottom: 3.5vh;
+            font-size: 8vh !important;
+            margin-bottom: 4vh;
         }
         #intro>h1>i, #guide>h1>i, #koduvayur>h1>i {
             float: right;
@@ -218,12 +218,12 @@
             width: 95%;
             height: 60vh;
             margin: auto;
-            margin-bottom: 2.5vh;
+            margin-bottom: 3.5vh;
         }
         #behindlogo>h1>img {
             float: right;
-            width: 6vh;
-            height: 6.3vh;
+            width: 8vh;
+            height: 8.4vh;
             display: inline-block;
         }
         #guide {
@@ -249,8 +249,8 @@
         #footer>p {
             color: snow;
             font-family: "Segoe UI";
-            font-size: 3.2vh;
-            line-height: 11vh;
+            font-size: 4vh;
+            line-height: 12vh;
         }
         #follow {
             display: inline-block;
@@ -258,14 +258,16 @@
         }
         #follow>a>i {
             display: inline-block;
-            font-size: 6vh;
+            font-size: 7vh;
 
         }
         #mobshare {
             height: 18vh;
-            line-height: 16vh;
-            padding-top: 1vh;
             width: 100% !important;
+        }
+        #mobshare>a {
+            line-height: 18vh;
+            padding-top: 6vh;
         }
         #copyright {
             display: block;
@@ -302,7 +304,7 @@
             color: #257366 !important;
         }
         #mobshare>a>i {
-            font-size: 9vh;
+            font-size: 10vh;
             padding-left: 8vw;
             padding-right: 8vw;
         }
