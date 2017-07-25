@@ -1,0 +1,466 @@
+
+
+
+@media (max-width: 1080px) {
+
+    @media (orientation: portrait) {
+        #content {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            background: linear-gradient(to top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 65%, rgba(237, 237, 237, 1) 100%);
+        }
+
+        #maincontent {
+            /*background-color: #cccccc;*/
+            width: 100% !important;
+            padding: 1vw 1vw 1vw 1vw;
+        }
+        #maincontent>p {
+            display: none;
+        }
+
+        #adslot1_pc, #adslot2_pc {
+            display: none;
+        }
+        #adslot1_mob, #adslot2_mob {
+            display: block;
+            padding: 1vw 1vw 1vw 1vw;
+            margin: 0;
+            margin-bottom: 1vh;
+        }
+        #adslot1_mob > div, #adslot2_mob > div {
+            height: 8vh;
+            background-color: #ce8483;
+        }
+
+        #intro,#behindlogo,#guide,#koduvayur {
+            padding: 0;
+            font-size: 2.3vh;
+            font-family: "Segoe UI";
+            border-left: solid #8b0000 1vw;
+            margin-bottom: 4vh;
+        }
+        #intro>p, #behindlogo>p, #koduvayur>p {
+            text-indent: 8vw;
+            padding-left: 2vh;
+            padding-right: 2vh;
+            text-align: justify;
+        }
+        #intro>li {
+            padding-left: 3vh;
+        }
+        #intro>h1,#behindlogo>h1,#guide>h1, #koduvayur>h1 {
+            margin-left: 2vh;
+            color: #2F4F4F;
+            border-bottom: #FF6347 2px solid;
+            font-size: 5vh !important;
+            margin-bottom: 2.5vh;
+        }
+        #intro>h1>i, #guide>h1>i, #koduvayur>h1>i {
+            float: right;
+        }
+
+        #kdrmap {
+            width: 95%;
+            height: 60vh;
+            margin: auto;
+            margin-bottom: 2.5vh;
+        }
+        #behindlogo>h1>img {
+            float: right;
+            width: 5.3vh;
+            height: 5.6vh;
+            display: inline-block;
+        }
+        #guide {
+            width: 100%;
+        }
+        #guide>img {
+            width: 100%;
+            height: auto;
+            padding-left: 3vh;
+            padding-right: 2vh;
+            padding-bottom: 2vh;
+        }
+        #footer {
+            display: block;
+            height: 12vh;
+            width: 100%;
+            background: #232526;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            overflow: hidden;
+            bottom: 0 !important;
+        }
+        #footer>p {
+            color: snow;
+            font-family: "Segoe UI";
+            font-size: 2.3vh;
+            line-height: 5vh;
+        }
+        #follow {
+            display: block;
+        }
+        #follow>a>i {
+            display: inline-block;
+            font-size: 3.5vh;
+
+        }
+        #mobshare {
+            height: 11vh;
+            line-height: 10vh;
+            padding-top: 1vh;
+        }
+        #copyright {
+            display: block;
+        }
+        #follow>a>i {
+            color: #3b59e8 !important;
+        }
+        #mobfbshare>i {
+            color: #3b59e8 !important;
+        }
+        #mobplusone>i {
+            color: #dd4b39 !important;
+        }
+        #mobtweet>i {
+            color: #00aced !important;
+        }
+        #mobwhatsapp>i {
+            color: #25d366 !important;
+        }
+        #follow>a>i:hover {
+            color: #3b5998 !important;
+        }
+        #mobfbshare>i:hover {
+            color: #3b5998 !important;
+        }
+        #mobplusone>i:hover {
+            color: #9d4b39 !important;
+        }
+        #mobtweet>i:hover {
+            color: #007c9d !important;
+        }
+        #mobwhatsapp>i:hover {
+            color: #257366 !important;
+        }
+        #mobshare>a>i {
+            font-size: 6vh;
+            padding-left: 5vw;
+            padding-right: 5vw;
+        }
+        #pcshare {
+            display: none;
+        }
+
+    }
+    @media (orientation: landscape) {
+
+        #content {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            background: linear-gradient(to top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 65%, rgba(237, 237, 237, 1) 100%);
+        }
+
+        #maincontent {
+            /*background-color: #cccccc;*/
+            width: 100% !important;
+            padding: 1vw 1vw 1vw 1vw;
+        }
+        #maincontent>p {
+            display: none;
+        }
+
+        #adslot1_pc, #adslot2_pc {
+            display: none;
+        }
+        #adslot1_mob, #adslot2_mob {
+            display: block;
+            padding: 1vw 1vw 1vw 1vw;
+            margin: 0;
+            margin-bottom: 2vh;
+        }
+        #adslot1_mob>div, #adslot2_mob>div {
+            height: 12vh;
+            background-color: #ce8483;
+        }
+
+        #intro,#behindlogo,#guide,#koduvayur {
+            padding: 0;
+            font-size: 3.2vh;
+            font-family: "Segoe UI";
+            border-left: solid #8b0000 1vh;
+            margin-bottom: 6vh;
+        }
+        #intro>p, #behindlogo>p, #koduvayur>p {
+            text-indent: 8vw;
+            padding-left: 2vh;
+            padding-right: 2vh;
+            text-align: justify;
+        }
+        #intro>li {
+            padding-left: 3vh;
+        }
+        #intro>h1,#behindlogo>h1,#guide>h1,#koduvayur>h1 {
+            margin-left: 2vh;
+            color: #2F4F4F;
+            border-bottom: #FF6347 2px solid;
+            font-size: 6vh !important;
+            margin-bottom: 3.5vh;
+        }
+        #intro>h1>i, #guide>h1>i, #koduvayur>h1>i {
+            float: right;
+        }
+
+        #kdrmap {
+            width: 95%;
+            height: 60vh;
+            margin: auto;
+            margin-bottom: 2.5vh;
+        }
+        #behindlogo>h1>img {
+            float: right;
+            width: 6vh;
+            height: 6.3vh;
+            display: inline-block;
+        }
+        #guide {
+            width: 100%;
+        }
+        #guide>img {
+            width: 100%;
+            height: auto;
+            padding-left: 3vh;
+            padding-right: 2vh;
+            padding-bottom: 2vh;
+        }
+        #footer {
+            display: block;
+            height: 12vh;
+            width: 100%;
+            background: #232526;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            overflow: hidden;
+            bottom: 0 !important;
+        }
+        #footer>p {
+            color: snow;
+            font-family: "Segoe UI";
+            font-size: 3.2vh;
+            line-height: 11vh;
+        }
+        #follow {
+            display: inline-block;
+            float: right;
+        }
+        #follow>a>i {
+            display: inline-block;
+            font-size: 6vh;
+
+        }
+        #mobshare {
+            height: 18vh;
+            line-height: 16vh;
+            padding-top: 1vh;
+            width: 100% !important;
+        }
+        #copyright {
+            display: block;
+            float: left;
+        }
+        #follow>a>i {
+            color: #3b59e8 !important;
+        }
+        #mobfbshare>i {
+            color: #3b59e8 !important;
+        }
+        #mobplusone>i {
+            color: #dd4b39 !important;
+        }
+        #mobtweet>i {
+            color: #00aced !important;
+        }
+        #mobwhatsapp>i {
+            color: #25d366 !important;
+        }
+        #follow>a>i:hover {
+            color: #3b5998 !important;
+        }
+        #mobfbshare>i:hover {
+            color: #3b5998 !important;
+        }
+        #mobplusone>i:hover {
+            color: #9d4b39 !important;
+        }
+        #mobtweet>i:hover {
+            color: #007c9d !important;
+        }
+        #mobwhatsapp>i:hover {
+            color: #257366 !important;
+        }
+        #mobshare>a>i {
+            font-size: 9vh;
+            padding-left: 8vw;
+            padding-right: 8vw;
+        }
+        #pcshare {
+            display: none;
+        }
+
+    }
+}
+
+@media (min-width: 1080px) {
+
+
+    #content{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        background: linear-gradient(to top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 65%, rgba(237,237,237,1) 100%);
+    }
+
+    #maincontent {
+        /*background-color: #cccccc;*/
+        padding: 1vh 1vh 2vh 1vh;
+    }
+
+    #adslot1_pc, #adslot2_pc {
+        padding: 2vh 2vh 2vh 2vh;
+        margin: 0;
+    }
+    #adslot1_pc>div, #adslot2_pc>div {
+        height: 75vh;
+        background-color: #ce8483;
+    }
+
+    #adslot1_mob, #adslot2_mob {
+        display: none;
+    }
+
+    #intro,#behindlogo,#guide,#koduvayur {
+        padding: 0;
+        font-size: 2.3vh;
+        font-family: "Segoe UI";
+        border-left: solid #8b0000 0.3vw;
+
+    }
+    #intro>p, #behindlogo>p, #koduvayur>p {
+        text-indent: 3vw;
+        padding-left: 1vh;
+    }
+    #intro>li {
+        padding-left: 2vh;
+    }
+    #intro>h1,#behindlogo>h1,#guide>h1, #koduvayur>h1 {
+        margin-left: 2vh;
+        color: #2F4F4F;
+        border-bottom: #FF6347 2px solid;
+        margin-bottom: 3vh;
+        font-size: 4.3vh !important;
+    }
+    #intro>h1>i, #guide>h1>i, #koduvayur>h1>i {
+        float: right;
+    }
+    #kdrmap {
+        width: 95%;
+        height: 60vh;
+        margin: auto;
+        margin-bottom: 3vh;
+    }
+    #behindlogo>h1>img {
+        float: right;
+        width: 4.5vh;
+        height: 4.7vh;
+        display: inline-block;
+    }
+    #guide {
+        width: 100%;
+    }
+    #guide>img {
+        width: 100%;
+        height: auto;
+        padding-left: 3vh;
+        padding-right: 2vh;
+        padding-bottom: 2vh;
+    }
+    #intro,#behindlogo,#guide,#koduvayur {
+        margin-bottom: 6vh;
+    }
+    #footer {
+        display: block;
+        height: 10vh;
+        width: 100%;
+        background: #232526;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        overflow: hidden;
+        bottom: 0 !important;
+    }
+    #footer>p {
+        color: snow;
+        font-family: "Segoe UI";
+        font-size: 2.3vh;
+        line-height: 10vh;
+    }
+    #footer>p>a {
+        padding: 1vh;
+
+    }
+    #footer>p>a>i {
+        font-size: 5vh;
+
+    }
+    #follow {
+        margin-left: 20vw;
+        display: inline-block;
+    }
+    #pcshare {
+        display: inline-block;
+        float: right;
+    }
+    #copyright {
+        display: inline-block;
+        float: left;
+    }
+    #follow>a>i {
+        color: #3b59e8 !important;
+    }
+    #pcfbshare>i {
+        color: #3b59e8 !important;
+    }
+    #pcplusone>i {
+        color: #dd4b39 !important;
+    }
+    #pctweet>i {
+        color: #00aced !important;
+    }
+    #pcwhatsapp>i {
+        color: #25d366 !important;
+    }
+    #follow>a>i:hover {
+        color: #3b5998 !important;
+    }
+    #pcfbshare>i:hover {
+        color: #3b5998 !important;
+    }
+    #pcplusone>i:hover {
+        color: #9d4b39 !important;
+    }
+    #pctweet>i:hover {
+        color: #007c9d !important;
+    }
+    #pcwhatsapp>i:hover {
+        color: #257366 !important;
+    }
+    #mobshare {
+        display: none;
+    }
+    #mobshare>a {
+        display: none;
+    }
+
+}

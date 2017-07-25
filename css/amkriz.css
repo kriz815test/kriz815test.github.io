@@ -88,16 +88,17 @@ body {
 
 #mypage{
 
-    margin:0;
-    padding:0;
+    margin:0 0 0 0;
+    padding:0 0 0 0;
     display: block;
 }
 
 
 #mykdr_nav{
-    top: 0;
+
     display: block;
     margin: 0;
+    top: 0;
     position: fixed;
     z-index: 10000;
     width : 100%;
@@ -129,7 +130,7 @@ body {
     color: #4b3930 !important;
     cursor: pointer;
     font-weight: bold;
-    font-family: 'Segoe UI Light';
+    font-family: 'Segoe UI Semibold';
     text-decoration: wavy !important;
 }
 .mylogocap:hover{
@@ -178,7 +179,7 @@ body {
     color: #228B22;
 }
 #mykdr_menu>li>a:hover {
-     text-decoration: wavy !important;
+    text-decoration: wavy !important;
 
 }
 #mykdr_menu>li>a:active {
@@ -295,7 +296,7 @@ body {
 
             display: inline-block;
             /*font-family: "Arial Rounded MT Bold" !important;*/
-            font-size: 5vh;
+            font-size: 5.2vh;
             cursor: pointer;
             padding: 0 0 0 0;
         }
@@ -545,7 +546,7 @@ body {
 
     .mylogocap{
 
-        font-size: 2vw;
+        font-size: 1.8vw;
     }
 
 
@@ -569,7 +570,7 @@ body {
 
     }
 
-    /*#home,#landscape,#culture,#services,#trending,#events,#emergency,#about {  }*/
+    /*#home,#locality,#culture,#services,#trending,#events,#emergency,#about {  }*/
 
     #language{
         margin-bottom: 1vh;
