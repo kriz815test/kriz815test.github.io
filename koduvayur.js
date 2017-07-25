@@ -22,9 +22,9 @@ mykdrApp.config(function($routeProvider) {
         })
 
         // route for the landscape page
-        .when('/landscape', {
-            templateUrl : 'pages/landscape.html',
-            controller  : 'landscapeController'
+        .when('/locality', {
+            templateUrl : 'pages/locality.html',
+            controller  : 'localityController'
         })
         // route for the culture page
         .when('/culture', {
@@ -178,15 +178,29 @@ mykdrApp.controller('mainController', function($rootScope, $scope) {
     //     });
     // }, 8000);
 
+
 });
 
 mykdrApp.controller('homeController', function($rootScope, $scope) {
     $scope.message = 'Look! I am an about page.';
 
+    // alert($scope.message);
+
+    $scope.kdrMapUrl = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCjyFs7nzkwdQ9YhT1AeALSYEeGEBbFpuQ";
+
+    $scope.myMap = function() {
+        var mapProp= {
+            center:new google.maps.LatLng(10.678849, 76.646882),
+            zoom:13
+        };
+        var map=new google.maps.Map(document.getElementById("kdrmap"),mapProp);
+    };
+
+    $scope.myMap();
 
 });
 
-mykdrApp.controller('landscapeController', function($rootScope, $scope) {
+mykdrApp.controller('localityController', function($rootScope, $scope) {
     $scope.message = 'Look! I am an about page.';
 
 
