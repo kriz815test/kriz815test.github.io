@@ -41,10 +41,10 @@ mykdrApp.config(function($routeProvider) {
             templateUrl : 'pages/services.html',
             controller  : 'servicesController'
         })
-        // route for the emergency page
-        .when('/emergency', {
-            templateUrl : 'pages/emergency.html',
-            controller  : 'emergencyController'
+        // route for the feedback page
+        .when('/feedback', {
+            templateUrl : 'pages/feedback.html',
+            controller  : 'feedbackController'
         })
         // route for the about page
         .when('/about', {
@@ -218,7 +218,7 @@ mykdrApp.controller('servicesController', function($rootScope, $scope) {
 
 });
 
-mykdrApp.controller('emergencyController', function($rootScope, $scope) {
+mykdrApp.controller('feedbackController', function($rootScope, $scope) {
     $scope.message = 'Look! I am an about page.';
 
 
