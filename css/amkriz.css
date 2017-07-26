@@ -173,6 +173,7 @@ body {
 #mykdr_menu>li{
     font-family: "Segoe UI Semibold";
     font-weight: bolder;
+    text-transform: uppercase;
 }
 
 
@@ -212,8 +213,8 @@ body {
     opacity: 0.93;
 }
 
-#emergency:hover>a, #emergency:hover>a>i {
-    color: red !important;
+#feedback:hover>a, #feedback:hover>a>i {
+    color: #C71585 !important;
     text-decoration: wavy;
 }
 
@@ -571,7 +572,7 @@ body {
 
     }
 
-    /*#home,#locality,#culture,#services,#trending,#events,#emergency,#about {  }*/
+    /*#home,#locality,#culture,#services,#trending,#events,#feedback,#about {  }*/
 
     #language{
         margin-bottom: 1vh;
