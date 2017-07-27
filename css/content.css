@@ -154,7 +154,15 @@
             display: none;
         }
 
+        #feedbackspace {
+            display: block;
+            padding: 2vw 2vw 2vw 2vw;
+            width: 100%;
+            height: auto;
+        }
+
     }
+
     @media (orientation: landscape) {
 
         #content {
@@ -312,6 +320,13 @@
             display: none;
         }
 
+        #feedbackspace {
+            display: block;
+            padding: 2vh 2vh 2vh 2vh;
+            width: 100%;
+            height: auto;
+        }
+
     }
 }
 
@@ -327,7 +342,7 @@
 
     #maincontent {
         /*background-color: #cccccc;*/
-        padding: 1vh 1vh 2vh 1vh;
+        padding: 7vh 1vh 2vh 1vh;
     }
 
     #adslot1_pc, #adslot2_pc {
@@ -463,6 +478,13 @@
     }
     #mobshare>a {
         display: none;
+    }
+
+    #feedbackspace {
+        display: block;
+        padding: 2vh 2vh 2vh 2vh;
+        width: 100%;
+        height: auto;
     }
 
 }
